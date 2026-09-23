@@ -1,0 +1,20 @@
+{
+  "closed_episode_count": 2589,
+  "gross_delta_sat": 0,
+  "top5_net_sat_sorted": [
+    10248325472,
+    14682615624,
+    16614197268,
+    17397281403,
+    22616080596
+  ],
+  "bottom5_net_sat_sorted": [
+    -19062116165,
+    -19040946622,
+    -18077096161,
+    -17254882968,
+    -14923641927
+  ],
+  "top5_rank_values_unchanged": true,
+  "bottom5_rank_values_unchanged": true
+}

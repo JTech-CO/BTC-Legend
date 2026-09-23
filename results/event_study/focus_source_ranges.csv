@@ -1,0 +1,10 @@
+source_file,symbol,exectype,rows,source_row_min,source_row_max,case_date
+aoa-execution-2019-01-01-2020-12-31.csv,XBTH20,Trade,276,278774,281334,2020-03-13
+aoa-execution-2019-01-01-2020-12-31.csv,XBTUSD,Funding,2,277710,278022,2020-03-13
+aoa-execution-2019-01-01-2020-12-31.csv,XBTUSD,Trade,4706,274944,281933,2020-03-13
+aoa-execution-2019-01-01-2020-12-31.csv,XBTUSD,Funding,3,458617,462261,2020-10-21
+aoa-execution-2019-01-01-2020-12-31.csv,XBTUSD,Trade,2425,458619,463780,2020-10-21
+aoa-execution-2021-01-01-2021-06-30.csv,ETHUSD,Funding,2,184870,191817,2021-05-20
+aoa-execution-2021-01-01-2021-06-30.csv,ETHUSD,Trade,5619,182055,202819,2021-05-20
+aoa-execution-2021-01-01-2021-06-30.csv,XBTUSD,Funding,3,183967,196369,2021-05-20
+aoa-execution-2021-01-01-2021-06-30.csv,XBTUSD,Trade,5652,181959,204917,2021-05-20

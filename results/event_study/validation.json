@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "source_hash_aoa-execution-2018-03-01-2018-12-31.csv": true,
+    "source_hash_aoa-execution-2019-01-01-2020-12-31.csv": true,
+    "source_hash_aoa-execution-2021-01-01-2021-06-30.csv": true,
+    "source_hash_aoa-execution-2021-07-01-2021-12-31.csv": true,
+    "source_hash_aoa-wallet-2018-03-01-2021-12-31.csv": true,
+    "all_raw_liquidation_labels_covered": true,
+    "raw_liquidation_quantities": true,
+    "liquidation_group_fill_conservation": true,
+    "liquidation_group_quantity_conservation": true,
+    "liquidation_inventory_reduction": true,
+    "liquidation_no_previous_settlement": true,
+    "episode_net_reconciles_audit": true,
+    "episode_gross_reconciles_audit": true,
+    "episode_pnl_components": true,
+    "closed_episode_quantity_conservation": true,
+    "open_episode_quantity": true,
+    "daily_ledger_matches_baseline": true,
+    "focus_hourly_conservation": true,
+    "focus_wallet_reconciliation": true,
+    "focus_selection": true,
+    "focus_instrument_conservation": true,
+    "drawdown_contribution_conservation": true,
+    "market_input_hash": true,
+    "audit_input_hash": true
+  },
+  "all_checks_pass": true
+}

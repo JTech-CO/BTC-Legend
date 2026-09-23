@@ -1,0 +1,114 @@
+{
+  "version": "0.3-event-study",
+  "source_manifest": [
+    {
+      "file": "aoa-execution-2018-03-01-2018-12-31.csv",
+      "bytes": 67993490,
+      "rows": 164096,
+      "sha256": "8f2aa1af3caaeaeffff0375ce4d10b21e88ab22c624976d9031ddd0e715653b1"
+    },
+    {
+      "file": "aoa-execution-2019-01-01-2020-12-31.csv",
+      "bytes": 219076835,
+      "rows": 529632,
+      "sha256": "ebbd90935d8e609e6371fec69babbfea13c0458a94748b05f3f795cecd814b5a"
+    },
+    {
+      "file": "aoa-execution-2021-01-01-2021-06-30.csv",
+      "bytes": 191784153,
+      "rows": 457603,
+      "sha256": "a51f070c9e00aed72720b9029567d4adf32656d06594b87dff3b56360564ca37"
+    },
+    {
+      "file": "aoa-execution-2021-07-01-2021-12-31.csv",
+      "bytes": 122612445,
+      "rows": 293252,
+      "sha256": "3bd436edb68c60bd17eb3b0c307c68baf56ad79c1da9a21a0433031f4ea7a071"
+    },
+    {
+      "file": "aoa-wallet-2018-03-01-2021-12-31.csv",
+      "bytes": 318791,
+      "rows": 4388,
+      "sha256": "db0a8e6180faa093a7843ec09b1f673417252b2a7b6cac50ac96db426f2f3452"
+    }
+  ],
+  "case_selection": "Top/bottom 10 ledger posting days for all contracts and XBTUSD; detailed union of the maxima/minima; top/bottom 5 closed XBTUSD episodes; all liquidation-labelled fills. Ex-post descriptive selection, not a predictive test.",
+  "focus_dates": [
+    "2020-03-13",
+    "2020-10-21",
+    "2021-05-20"
+  ],
+  "account": {
+    "net_sat": 353732369404,
+    "positive_day_sum_sat": 816173445889,
+    "negative_day_abs_sum_sat": 462441076485,
+    "top10_day_sum_sat": 146288230959,
+    "bottom10_day_sum_sat": -124559063586,
+    "drawdown_peak_date": "2021-10-12",
+    "drawdown_trough_date": "2021-12-22",
+    "realised_drawdown_sat": -59097711858,
+    "recovery_date": null
+  },
+  "xbtusd": {
+    "closed_episodes": 2589,
+    "open_episodes": 1,
+    "full_export_episode_net_sat": 200710422693,
+    "closed_episode_net_sat": 200682252671,
+    "terminal": {
+      "terminal_position": -29080100,
+      "terminal_cost_sat": 56922139118,
+      "gross_sat": 206964119365
+    },
+    "trade_fee_sat": 8515015014,
+    "funding_credit_sat": 2261318342,
+    "opposite_sides_same_time": 2,
+    "same_time_order_sensitivity": {
+      "closed_episode_count": 2589,
+      "gross_delta_sat": 0,
+      "top5_net_sat_sorted": [
+        10248325472,
+        14682615624,
+        16614197268,
+        17397281403,
+        22616080596
+      ],
+      "bottom5_net_sat_sorted": [
+        -19062116165,
+        -19040946622,
+        -18077096161,
+        -17254882968,
+        -14923641927
+      ],
+      "top5_rank_values_unchanged": true,
+      "bottom5_rank_values_unchanged": true
+    }
+  },
+  "liquidation": {
+    "labelled_fills": 59,
+    "zero_order_ids": 28,
+    "symbols": {
+      "ETHUSD": 33,
+      "XBTUSD": 19,
+      "XRPU18": 4,
+      "XBTM18": 2,
+      "BCHZ18": 1
+    },
+    "years": {
+      "2018": 57,
+      "2019": 1,
+      "2020": 1
+    },
+    "ends_flat": 28,
+    "one_contract_fills": 5,
+    "xbtusd_forced_close_net_sat": -1368770824,
+    "xbtusd_linked_episode_net_sat": -1175461497,
+    "timestamp_order_groups": 29,
+    "group_flat_closes": 28,
+    "group_partial_reductions": 1,
+    "prior_settlement_rows_max": 0
+  },
+  "input_hashes": {
+    "historical_market_daily.csv": "d6caefeda1eb7440abcc4585a1d3c76dadeaa2b9d8751ae08bf0f4ceed3bf5ed",
+    "accounting_audit_summary.json": "3b935feae96195ab45ad2d777d476724660c1ff93e78b58b002581e640b8ee13"
+  }
+}

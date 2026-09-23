@@ -4,6 +4,8 @@
 
 Accounting update: [v0.2 discrepancy audit](accounting-audit.en.md) explains the aggregate model gap and classifies all 154 snapshot differences. The episode statistics below remain the original fill-sequential baseline.
 
+Event update: [v0.3 large-gain/loss and liquidation study](event-study.en.md) reconstructs extreme posting windows and funding-inclusive episodes. A full text scan finds 59 liquidation-labelled fills, including 31 ETHUSD fills with a valid order ID in addition to the 28 zero-ID fills below.
+
 ## Research conclusion
 
 The supplied account generated substantial **realised BTC profits across both rising and falling BTC markets**. Its results cannot be reduced to a BTC buy-and-hold position or one disclosed technical indicator. The records support an account that traded both directions, scaled order sizes, increasingly supplied liquidity, and earned substantial profits from non-BTC contracts. They also document liquidation-labelled executions and severe realised losses.

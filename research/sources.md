@@ -27,6 +27,13 @@ I used Exa to review 40 sources across 3 search workstreams. Here, “40 sources
 
 The accounting follow-up used targeted official-source web searches, separately from the original Exa search count. S3's settlement-window guidance and S15's historical technical notice were checked. The exact timestamp/order/side grouping and integer allocation rules are empirical hypotheses tested against the supplied ledger, not claims copied from exchange documentation.
 
+Event study v0.3 additionally checked two contemporaneous primary sources on 2026-09-23, separately from the original Exa search count:
+
+- S16: [BitMEX, How We Are Responding to the 13 March DDoS Attacks](https://www.bitmex.com/blog/how-we-are-responding-to-last-weeks-ddos-attacks), 2020-03-16. Exchange account of 02:16 and 12:56 UTC access disruption. Used for operational chronology, not proof of the account's profits, losses, refunds or causal benefit. 거래소의 당시 설명이며 계좌 손익의 인과 증거가 아닙니다.
+- S17: [BitMEX, The BitMEX Insurance Fund](https://www.bitmex.com/blog/the-bitmex-insurance-fund), 2019-02-10. Distinguishes liquidation/bankruptcy accounting and engine execution/insurance-fund outcomes. Used to limit interpretation of liquidation fill prices, not to infer historical margin mode or leverage. 청산 가격 해석의 한계 근거이며 실제 마진 설정을 역산하지 않습니다.
+
+The event study reuses the saved historical Coin Metrics BTC/USD and USDT/USD references. It does not refresh the 2026 current-market snapshot or substitute daily closes for intraday marks.
+
 Undated live-price pages and stale search snippets were rejected as current-price evidence. An initial Coinbase public candle request returned HTTP 403; the study uses successfully retrieved Bitstamp/Binance data instead. No missing observations were filled with news prices.
 
 공개 데이터 접근 가능 여부는 재배포 라이선스 확인과 다릅니다. 원본 계정 파일과 서한의 공개 권한은 이 연구에서 확정하지 않았으며, 실제 GitHub 공개 전에 소유자가 결정할 사항입니다.

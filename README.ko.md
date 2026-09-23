@@ -10,11 +10,14 @@
 | --- | --- |
 | 핵심 발견과 당시·현재 시장 비교 | [한국어 연구 보고서](reports/research.ko.md) · [English](reports/research.en.md) |
 | 후속 회계 차이 추적 | [한국어 v0.2](reports/accounting-audit.ko.md) · [English v0.2](reports/accounting-audit.en.md) |
+| 큰 이익·손실·청산 사건 | [한국어 v0.3](reports/event-study.ko.md) · [English v0.3](reports/event-study.en.md) |
 | 단위·회계·데이터 품질·재현 방법 | [한국어 방법론](research/methodology.ko.md) · [English](research/methodology.en.md) |
 | 외부 근거 | [출처 목록](research/sources.md) |
 | 수치 원본 | [계정 집계](results/summary.json) · [시장 집계](results/market_summary.json) |
 
 핵심 결과는 **체결 1,439,207건**, **식별 가능한 주문 23,416개**, **주문 ID가 0인 청산 표시 체결 28건**입니다. 청산 체결은 주문 복원에서 분리하지만 손익·포지션 집계에서는 유지합니다. 계좌 전체 순실현손익은 **3,537.32369404 BTC**이고, 그중 XBTUSD는 **2,007.08464645 BTC(약 56.74%)**입니다.
+
+사건 전수 연구에서 청산 표시 체결 전체는 **59건**으로 확인됐습니다. 기존 28건 외에 정상 주문 ID를 공유하는 ETHUSD 부분 축소 체결 31건이 있습니다. 정확한 시각·주문 기준 29개 묶음이며 독립 마진콜 횟수로 확정하지 않습니다. 최대 이익 기장일 **+275.53795475 BTC**는 XBTUSD·XBTH20, 최대 손실일 **−281.83947272 BTC**는 XBTUSD·ETHUSD의 합산 결과입니다. 펀딩 포함 보유 구간, 시간별 경로와 청산 근거는 [별도 v0.3 결과](results/event_study/summary.json)에 저장했습니다.
 
 완료된 총 입금 **14.48925714 BTC**와 실현손익에서 출금 **2,814.54321713 BTC**를 차감하면 마지막 잔액 **737.26973405 BTC**와 정확히 일치합니다. 하지만 마지막 XBTUSD 포지션이 열려 있으므로 이를 최종 평가자산이나 투자수익률로 해석하지 않습니다.
 

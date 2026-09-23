@@ -12,6 +12,7 @@ The project studies execution, inventory, realised performance, losses, collater
 | --- | --- | --- |
 | Findings, historical/current comparison, transferability | [Research report](reports/research.en.md) | [연구 보고서](reports/research.ko.md) |
 | Follow-up: accounting discrepancy attribution | [Accounting audit v0.2](reports/accounting-audit.en.md) | [회계 차이 추적 v0.2](reports/accounting-audit.ko.md) |
+| Follow-up: large gains, losses and liquidations | [Event study v0.3](reports/event-study.en.md) | [극단 손익·청산 연구 v0.3](reports/event-study.ko.md) |
 | Definitions, accounting, data quality, reproducibility | [Methodology](research/methodology.en.md) | [분석 방법론](research/methodology.ko.md) |
 | External source register | [Sources](research/sources.md) | Shared bilingual register |
 | Machine-readable findings | [Account summary](results/summary.json), [market summary](results/market_summary.json) | Same numerical outputs |
@@ -19,6 +20,7 @@ The project studies execution, inventory, realised performance, losses, collater
 ## Principal observations
 
 - **1,439,207 trade fills**, **23,416 identifiable executed orders**, and **28 liquidation-labelled fills with zero UUID order IDs**. The latter remain in inventory and cost calculations but cannot be assigned real parent orders.
+- The event study finds **59 liquidation-labelled fills in total**: the 28 zero-ID fills plus 31 fills of one valid-ID ETHUSD partial-reduction order. Exact timestamp/order grouping yields 29 observable groups, not a verified independent margin-call count.
 - **3,537.32369404 BTC** in account-wide net realised ledger PNL. XBTUSD contributes **2,007.08464645 BTC**, approximately **56.74%**. Other contracts matter substantially.
 - Completed deposits of **14.48925714 BTC**, withdrawals of **2,814.54321713 BTC**, and final wallet balance of **737.26973405 BTC** reconcile exactly. This is a cash ledger identity, not a total-return calculation.
 - XBTUSD has **941,007 fills and 18,397 identifiable orders**. Its reconstructed end position is **short 29,080,100 USD contracts** under an initial-zero-inventory assumption supported by 3,961 funding-position checks.
@@ -33,10 +35,13 @@ Python 3.11+ and the packages in `requirements.txt` are sufficient. The supplied
 ```text
 python scripts/analyze.py
 python scripts/accounting_audit.py
+python scripts/event_study.py
+python scripts/event_figures.py
 python scripts/market_analysis.py
 python scripts/figures.py
 python -m unittest discover -s tests -v
 python scripts/verify.py
+python scripts/verify_event_study.py
 ```
 
 These commands use saved market inputs and do not require network access. `python scripts/fetch_market.py` optionally downloads public market data for the fixed research cutoff; it never uses authenticated or trading endpoints. Do not refresh snapshots before reproducing the published version. Upstream revisions can change later downloads. Source hashes are recorded in `results/manifest.json` and `data/market/retrieval.json`.
@@ -48,3 +53,5 @@ These commands use saved market inputs and do not require network access. `pytho
 The [accounting follow-up](reports/accounting-audit.en.md) explains the baseline **0.02745234 BTC** gap as **0.01958048 BTC of out-of-window funding** plus **0.00787186 BTC of inventory cost allocation**. The refined XBTUSD aggregate matches the wallet exactly. Twelve posting dates retain differences of 1–2 satoshis. Of 154 raw wallet snapshot differences, 152 match the source's displayed precision; two dates involve one withdrawal with ambiguous processing chronology. Wallet timestamps remain truncated and ending inventory remains open. NAV returns, exact leverage, Sharpe ratios, liquidation prices, predictive signals and modern profitability are not established.
 
 `results/summary.json` and the conditional episode files retain the v0.1 fill-based baseline. Refined accounting evidence is in [results/accounting_audit/summary.json](results/accounting_audit/summary.json); it does not silently replace the original episode statistics.
+
+The [event study](reports/event-study.en.md) attributes the best account posting day (+275.53795475 BTC) to XBTUSD and XBTH20, and the worst (−281.83947272 BTC) to XBTUSD and ETHUSD. Separate v0.3 episodes include funding and preserve the open ending position. Rankings, source references, liquidation groups and hourly case paths are under [results/event_study](results/event_study/summary.json).
