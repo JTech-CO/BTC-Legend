@@ -1,0 +1,130 @@
+[
+  {
+    "asset": "eth",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/eth.csv",
+    "retrieved_at_utc": "2026-09-23T03:28:06.481015+00:00",
+    "status": "ok",
+    "rows": 1402,
+    "valid_prices": 1402,
+    "raw_response_sha256": "46b18f3df967405374b1f6ee8a3d11ee1b7a5b176ac9fb4342caf6bf8648f2cc",
+    "file_sha256": "66e44fe067d5c1e575ec8607d9a37dc0becaec6c117a53e539719bf358c348fe"
+  },
+  {
+    "asset": "xrp",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/xrp.csv",
+    "retrieved_at_utc": "2026-09-23T03:28:06.482015+00:00",
+    "status": "ok",
+    "rows": 1402,
+    "valid_prices": 1402,
+    "raw_response_sha256": "251ed578003a742e42e3fb239af5c765903384b4cc42fee6b3872be8a5b0b568",
+    "file_sha256": "8a8b3d37ceeca95a6cc2476c4a2b89a1a0dc610e03150df37d30819a65561970"
+  },
+  {
+    "asset": "bch",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/bch.csv",
+    "retrieved_at_utc": "2026-09-23T03:28:06.482015+00:00",
+    "status": "ok",
+    "rows": 1402,
+    "valid_prices": 1402,
+    "raw_response_sha256": "ac397297b3b6481cfd70bfb1c9b36e991deb2a70c50b885f0ed3d68a79aa7423",
+    "file_sha256": "38d493d0d27cd0a34913c82be1567e8b54ea14b8d0bd950790a200df64f16954"
+  },
+  {
+    "asset": "ltc",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/ltc.csv",
+    "retrieved_at_utc": "2026-09-23T03:28:06.483015+00:00",
+    "status": "ok",
+    "rows": 1402,
+    "valid_prices": 1402,
+    "raw_response_sha256": "a47defa0eae5c5e39b7f4b4392a309d32daffb271f4cfd8e5d2c915dcc009a6e",
+    "file_sha256": "4bd2516e0ddf27a5a2c123cb5cf8c619e1f125dc45c1b9b770e9c0239a25f6fb"
+  },
+  {
+    "asset": "ada",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/ada.csv",
+    "retrieved_at_utc": "2026-09-23T03:28:06.935144+00:00",
+    "status": "ok",
+    "rows": 1402,
+    "valid_prices": 1402,
+    "raw_response_sha256": "be2809d07b4fc70b2fdaaf5177fabd9d04893d5db85f4280b02d0170ad99a0e8",
+    "file_sha256": "3238ce3709d25403d554f3c695d01397374017fe9e0ec597276ab20a21f60c8e"
+  },
+  {
+    "asset": "eos",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/eos.csv",
+    "retrieved_at_utc": "2026-09-23T03:28:06.964150+00:00",
+    "status": "ok",
+    "rows": 1402,
+    "valid_prices": 1302,
+    "raw_response_sha256": "f2abecacfcee7ebe38cdcb27668b480546ebcf7fb8c5ccb99e544fc9607a9ce1",
+    "file_sha256": "dbcac9accb1e0b7333735b533474be4cbdc44a3825eb1c8d7a6a8bd0b544cf73"
+  },
+  {
+    "asset": "trx",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/trx.csv",
+    "retrieved_at_utc": "2026-09-23T03:28:06.982673+00:00",
+    "status": "ok",
+    "rows": 1402,
+    "valid_prices": 1286,
+    "raw_response_sha256": "5f7fb5591c2cc39911059bd28137b5e02e1e0368f46430e0e1116a06a536390b",
+    "file_sha256": "d66c2b1be8bd529f6dfcbaed037625d74669fc8936af83c933e00752ef33d64d"
+  },
+  {
+    "asset": "doge",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/doge.csv",
+    "retrieved_at_utc": "2026-09-23T03:28:07.012675+00:00",
+    "status": "ok",
+    "rows": 1402,
+    "valid_prices": 1402,
+    "raw_response_sha256": "ab756a42b9c1560dfdba6b1da20eb9a11e6e7263e3df53a7f85ddc45b5b3e0a1",
+    "file_sha256": "4b73f95a2670e6a8b946dff03b69cbfc9b31f67122caf5a68a6da2448524e4f8"
+  },
+  {
+    "asset": "bnb",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/bnb.csv",
+    "retrieved_at_utc": "2026-09-23T03:28:07.293192+00:00",
+    "status": "ok",
+    "rows": 1402,
+    "valid_prices": 1402,
+    "raw_response_sha256": "7efa3cf1965110ad687c76051fee49efea97698504a7e641206444047bf5f6f2",
+    "file_sha256": "5d2f1d2131f1cfd35924ba591add0aa3a0007aeaec236f74c752c37a959bf39a"
+  },
+  {
+    "asset": "dot",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/dot.csv",
+    "retrieved_at_utc": "2026-09-23T03:28:07.307193+00:00",
+    "status": "ok",
+    "rows": 857,
+    "valid_prices": 499,
+    "raw_response_sha256": "cdab3a1581fe214b39786ef383127420eb7dea09f4f692bd658f7359187e85af",
+    "file_sha256": "ad7cb7d2384da4f1ec352b38550690430cb2e99ab03f9288cc17a7afa7e292cd"
+  },
+  {
+    "asset": "link",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/link.csv",
+    "retrieved_at_utc": "2026-09-23T03:28:07.360578+00:00",
+    "status": "ok",
+    "rows": 1402,
+    "valid_prices": 1402,
+    "raw_response_sha256": "721fd2c5f0e131357782f2a23585c16f9da5a394c1a6ab0de910f4375ad5fb34",
+    "file_sha256": "f2c7115a6a9d152ae8a954074e45ef37c8aba0987daa137d441a666396421c4a"
+  },
+  {
+    "asset": "yfi",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/yfi.csv",
+    "retrieved_at_utc": "2026-09-23T03:28:07.446403+00:00",
+    "status": "ok",
+    "rows": 533,
+    "valid_prices": 525,
+    "raw_response_sha256": "b8dfbe7959404bcf96ef0c24a4691d87e43139ade655ae7eb00cc733ad58fc2c",
+    "file_sha256": "8140e63227375f81e8de060bbd129da505526be8c3a0c81eba9d3231fed6628f"
+  },
+  {
+    "asset": "instrument_metadata",
+    "url": "https://www.bitmex.com/api/v1/instrument?filter=%7B%22symbol%22%3A+%5B%22ADAM18%22%2C+%22ADAM19%22%2C+%22ADAU18%22%2C+%22ADAUSDT%22%2C+%22ADAZ18%22%2C+%22BCHM18%22%2C+%22BCHM19%22%2C+%22BCHU18%22%2C+%22BCHUSD%22%2C+%22BCHZ18%22%2C+%22BNBUSDT%22%2C+%22DOGEUSDT%22%2C+%22DOTUSDT%22%2C+%22EOSH21%22%2C+%22EOSM18%22%2C+%22EOSU18%22%2C+%22EOSZ18%22%2C+%22ETHM18%22%2C+%22ETHU18%22%2C+%22ETHUSD%22%2C+%22ETHUSDM21%22%2C+%22LINKUSDT%22%2C+%22LTCH19%22%2C+%22LTCU18%22%2C+%22LTCUSD%22%2C+%22TRXH19%22%2C+%22TRXU18%22%2C+%22TRXU19%22%2C+%22TRXZ18%22%2C+%22XBT7D_U110%22%2C+%22XBTH19%22%2C+%22XBTH20%22%2C+%22XBTM18%22%2C+%22XBTM19%22%2C+%22XBTU18%22%2C+%22XBTU21%22%2C+%22XBTUSD%22%2C+%22XBTZ18%22%2C+%22XRPH19%22%2C+%22XRPH21%22%2C+%22XRPM18%22%2C+%22XRPM19%22%2C+%22XRPU18%22%2C+%22XRPUSD%22%2C+%22XRPZ18%22%2C+%22YFIUSDTZ20%22%5D%7D&count=500",
+    "retrieved_at_utc": "2026-09-23T03:28:07.760631+00:00",
+    "status": "ok",
+    "rows": 46,
+    "raw_response_sha256": "54d2f73ed38956cb9390c42c729123f87b88e927c3dc2cd7627af61119a2a061"
+  }
+]

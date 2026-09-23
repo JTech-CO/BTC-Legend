@@ -1,0 +1,10 @@
+{
+  "asset": "ada",
+  "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/ada.csv",
+  "retrieved_at_utc": "2026-09-23T03:28:06.935144+00:00",
+  "status": "ok",
+  "rows": 1402,
+  "valid_prices": 1402,
+  "raw_response_sha256": "be2809d07b4fc70b2fdaaf5177fabd9d04893d5db85f4280b02d0170ad99a0e8",
+  "file_sha256": "3238ce3709d25403d554f3c695d01397374017fe9e0ec597276ab20a21f60c8e"
+}

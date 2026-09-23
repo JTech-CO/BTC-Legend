@@ -1,0 +1,10 @@
+{
+  "asset": "ltc",
+  "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/ltc.csv",
+  "retrieved_at_utc": "2026-09-23T03:28:06.483015+00:00",
+  "status": "ok",
+  "rows": 1402,
+  "valid_prices": 1402,
+  "raw_response_sha256": "a47defa0eae5c5e39b7f4b4392a309d32daffb271f4cfd8e5d2c915dcc009a6e",
+  "file_sha256": "4bd2516e0ddf27a5a2c123cb5cf8c619e1f125dc45c1b9b770e9c0239a25f6fb"
+}

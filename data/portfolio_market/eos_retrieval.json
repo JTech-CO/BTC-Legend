@@ -1,0 +1,10 @@
+{
+  "asset": "eos",
+  "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/eos.csv",
+  "retrieved_at_utc": "2026-09-23T03:28:06.964150+00:00",
+  "status": "ok",
+  "rows": 1402,
+  "valid_prices": 1302,
+  "raw_response_sha256": "f2abecacfcee7ebe38cdcb27668b480546ebcf7fb8c5ccb99e544fc9607a9ce1",
+  "file_sha256": "dbcac9accb1e0b7333735b533474be4cbdc44a3825eb1c8d7a6a8bd0b544cf73"
+}

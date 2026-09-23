@@ -13,6 +13,7 @@ The project studies execution, inventory, realised performance, losses, collater
 | Findings, historical/current comparison, transferability | [Research report](reports/research.en.md) | [연구 보고서](reports/research.ko.md) |
 | Follow-up: accounting discrepancy attribution | [Accounting audit v0.2](reports/accounting-audit.en.md) | [회계 차이 추적 v0.2](reports/accounting-audit.ko.md) |
 | Follow-up: large gains, losses and liquidations | [Event study v0.3](reports/event-study.en.md) | [극단 손익·청산 연구 v0.3](reports/event-study.ko.md) |
+| Follow-up: full portfolio inventory and reference risk | [Portfolio risk v0.4](reports/portfolio-risk.en.md) | [전체 포트폴리오 위험 v0.4](reports/portfolio-risk.ko.md) |
 | Definitions, accounting, data quality, reproducibility | [Methodology](research/methodology.en.md) | [분석 방법론](research/methodology.ko.md) |
 | External source register | [Sources](research/sources.md) | Shared bilingual register |
 | Machine-readable findings | [Account summary](results/summary.json), [market summary](results/market_summary.json) | Same numerical outputs |
@@ -37,11 +38,14 @@ python scripts/analyze.py
 python scripts/accounting_audit.py
 python scripts/event_study.py
 python scripts/event_figures.py
+python scripts/portfolio_risk.py
+python scripts/portfolio_figures.py
 python scripts/market_analysis.py
 python scripts/figures.py
 python -m unittest discover -s tests -v
 python scripts/verify.py
 python scripts/verify_event_study.py
+python scripts/verify_portfolio_risk.py
 ```
 
 These commands use saved market inputs and do not require network access. `python scripts/fetch_market.py` optionally downloads public market data for the fixed research cutoff; it never uses authenticated or trading endpoints. Do not refresh snapshots before reproducing the published version. Upstream revisions can change later downloads. Source hashes are recorded in `results/manifest.json` and `data/market/retrieval.json`.
@@ -55,3 +59,5 @@ The [accounting follow-up](reports/accounting-audit.en.md) explains the baseline
 `results/summary.json` and the conditional episode files retain the v0.1 fill-based baseline. Refined accounting evidence is in [results/accounting_audit/summary.json](results/accounting_audit/summary.json); it does not silently replace the original episode statistics.
 
 The [event study](reports/event-study.en.md) attributes the best account posting day (+275.53795475 BTC) to XBTUSD and XBTH20, and the worst (−281.83947272 BTC) to XBTUSD and ETHUSD. Separate v0.3 episodes include funding and preserve the open ending position. Rankings, source references, liquidation groups and hourly case paths are under [results/event_study](results/event_study/summary.json).
+
+The [portfolio study](reports/portfolio-risk.en.md) reconstructs all 46 contracts and eight settlements. Every contract's aggregate PNL matches the ledger, and all 5,368 funding quantities match inventory. Daily spot-reference valuation and eight static stress scenarios include BTC collateral and USD/USDT conversion. They are conditional scenarios, not exchange-mark NAV or actual leverage. Historical specifications override five currently reused USDT symbols. Inputs are saved separately in `data/portfolio_market/`; offline results are in [the portfolio summary](results/portfolio_risk/summary.json).

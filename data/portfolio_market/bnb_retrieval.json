@@ -1,0 +1,10 @@
+{
+  "asset": "bnb",
+  "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/bnb.csv",
+  "retrieved_at_utc": "2026-09-23T03:28:07.293192+00:00",
+  "status": "ok",
+  "rows": 1402,
+  "valid_prices": 1402,
+  "raw_response_sha256": "7efa3cf1965110ad687c76051fee49efea97698504a7e641206444047bf5f6f2",
+  "file_sha256": "5d2f1d2131f1cfd35924ba591add0aa3a0007aeaec236f74c752c37a959bf39a"
+}

@@ -1,0 +1,10 @@
+{
+  "asset": "yfi",
+  "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/yfi.csv",
+  "retrieved_at_utc": "2026-09-23T03:28:07.446403+00:00",
+  "status": "ok",
+  "rows": 533,
+  "valid_prices": 525,
+  "raw_response_sha256": "b8dfbe7959404bcf96ef0c24a4691d87e43139ade655ae7eb00cc733ad58fc2c",
+  "file_sha256": "8140e63227375f81e8de060bbd129da505526be8c3a0c81eba9d3231fed6628f"
+}

@@ -4,6 +4,8 @@ Version 0.1, research cutoff 2026-09-23. [한국어](methodology.ko.md). Numeric
 
 The [v0.2 accounting audit](../reports/accounting-audit.en.md) refines this baseline's reporting boundary and simultaneous-fill allocation. Baseline episode outputs are retained for comparison; refined accounting outputs are stored separately.
 
+The [v0.4 portfolio methodology](../reports/portfolio-risk.en.md) extends the scope to every supplied contract, settlement and funding record. Its daily reference marks and static risk scenarios remain separate from validated realised accounting and from this v0.1 baseline.
+
 ## 1. Preserve and validate the inputs
 
 The five supplied CSVs are read without modification. SHA-256, bytes and row counts identify each original. Execution IDs must be non-null and globally unique. Trade quantities/prices must be positive and directions must be Buy/Sell. All observed settlement currencies are `XBt`. The script fails if these conditions change. No losses, liquidation rows or outliers are trimmed.

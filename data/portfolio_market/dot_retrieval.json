@@ -1,0 +1,10 @@
+{
+  "asset": "dot",
+  "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/dot.csv",
+  "retrieved_at_utc": "2026-09-23T03:28:07.307193+00:00",
+  "status": "ok",
+  "rows": 857,
+  "valid_prices": 499,
+  "raw_response_sha256": "cdab3a1581fe214b39786ef383127420eb7dea09f4f692bd658f7359187e85af",
+  "file_sha256": "ad7cb7d2384da4f1ec352b38550690430cb2e99ab03f9288cc17a7afa7e292cd"
+}

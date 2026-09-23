@@ -1,0 +1,10 @@
+{
+  "asset": "trx",
+  "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/trx.csv",
+  "retrieved_at_utc": "2026-09-23T03:28:06.982673+00:00",
+  "status": "ok",
+  "rows": 1402,
+  "valid_prices": 1286,
+  "raw_response_sha256": "5f7fb5591c2cc39911059bd28137b5e02e1e0368f46430e0e1116a06a536390b",
+  "file_sha256": "d66c2b1be8bd529f6dfcbaed037625d74669fc8936af83c933e00752ef33d64d"
+}

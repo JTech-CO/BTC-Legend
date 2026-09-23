@@ -1,0 +1,10 @@
+{
+  "asset": "doge",
+  "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/doge.csv",
+  "retrieved_at_utc": "2026-09-23T03:28:07.012675+00:00",
+  "status": "ok",
+  "rows": 1402,
+  "valid_prices": 1402,
+  "raw_response_sha256": "ab756a42b9c1560dfdba6b1da20eb9a11e6e7263e3df53a7f85ddc45b5b3e0a1",
+  "file_sha256": "4b73f95a2670e6a8b946dff03b69cbfc9b31f67122caf5a68a6da2448524e4f8"
+}

@@ -1,0 +1,149 @@
+{
+  "version": "0.4-portfolio-risk",
+  "source_manifest": [
+    {
+      "file": "aoa-execution-2018-03-01-2018-12-31.csv",
+      "bytes": 67993490,
+      "rows": 164096,
+      "sha256": "8f2aa1af3caaeaeffff0375ce4d10b21e88ab22c624976d9031ddd0e715653b1"
+    },
+    {
+      "file": "aoa-execution-2019-01-01-2020-12-31.csv",
+      "bytes": 219076835,
+      "rows": 529632,
+      "sha256": "ebbd90935d8e609e6371fec69babbfea13c0458a94748b05f3f795cecd814b5a"
+    },
+    {
+      "file": "aoa-execution-2021-01-01-2021-06-30.csv",
+      "bytes": 191784153,
+      "rows": 457603,
+      "sha256": "a51f070c9e00aed72720b9029567d4adf32656d06594b87dff3b56360564ca37"
+    },
+    {
+      "file": "aoa-execution-2021-07-01-2021-12-31.csv",
+      "bytes": 122612445,
+      "rows": 293252,
+      "sha256": "3bd436edb68c60bd17eb3b0c307c68baf56ad79c1da9a21a0433031f4ea7a071"
+    },
+    {
+      "file": "aoa-wallet-2018-03-01-2021-12-31.csv",
+      "bytes": 318791,
+      "rows": 4388,
+      "sha256": "db0a8e6180faa093a7843ec09b1f673417252b2a7b6cac50ac96db426f2f3452"
+    }
+  ],
+  "input_hashes": {
+    "data/portfolio_market/retrieval.json": "a0e4bc34e31dbfe7a8a9940e94b47a79962c50f98cfcfaee05b79568ff44e92d",
+    "data/portfolio_market/instrument_metadata.json": "54d2f73ed38956cb9390c42c729123f87b88e927c3dc2cd7627af61119a2a061",
+    "data/market/btc_coinmetrics_daily.csv": "7c2f951b321f930d83b98b9e7a63948728067da4168ed952b8cf99b67ef1b834",
+    "data/market/usdt_coinmetrics_daily.csv": "bdae3358c911cc67552ee4b5c4bc471d7b838c3b9841b8ab9418512aba5ad0da",
+    "data/portfolio_market/ada_daily.csv": "3238ce3709d25403d554f3c695d01397374017fe9e0ec597276ab20a21f60c8e",
+    "data/portfolio_market/bch_daily.csv": "38d493d0d27cd0a34913c82be1567e8b54ea14b8d0bd950790a200df64f16954",
+    "data/portfolio_market/bnb_daily.csv": "5d2f1d2131f1cfd35924ba591add0aa3a0007aeaec236f74c752c37a959bf39a",
+    "data/portfolio_market/doge_daily.csv": "4b73f95a2670e6a8b946dff03b69cbfc9b31f67122caf5a68a6da2448524e4f8",
+    "data/portfolio_market/dot_daily.csv": "ad7cb7d2384da4f1ec352b38550690430cb2e99ab03f9288cc17a7afa7e292cd",
+    "data/portfolio_market/eos_daily.csv": "dbcac9accb1e0b7333735b533474be4cbdc44a3825eb1c8d7a6a8bd0b544cf73",
+    "data/portfolio_market/eth_daily.csv": "66e44fe067d5c1e575ec8607d9a37dc0becaec6c117a53e539719bf358c348fe",
+    "data/portfolio_market/link_daily.csv": "f2c7115a6a9d152ae8a954074e45ef37c8aba0987daa137d441a666396421c4a",
+    "data/portfolio_market/ltc_daily.csv": "4bd2516e0ddf27a5a2c123cb5cf8c619e1f125dc45c1b9b770e9c0239a25f6fb",
+    "data/portfolio_market/trx_daily.csv": "d66c2b1be8bd529f6dfcbaed037625d74669fc8936af83c933e00752ef33d64d",
+    "data/portfolio_market/xrp_daily.csv": "8a8b3d37ceeca95a6cc2476c4a2b89a1a0dc610e03150df37d30819a65561970",
+    "data/portfolio_market/yfi_daily.csv": "8140e63227375f81e8de060bbd129da505526be8c3a0c81eba9d3231fed6628f"
+  },
+  "contract_count": 46,
+  "contract_kinds": {
+    "linear_btc": 26,
+    "quanto": 11,
+    "inverse": 8,
+    "option": 1
+  },
+  "historical_symbol_overrides": [
+    "ADAUSDT",
+    "BNBUSDT",
+    "DOGEUSDT",
+    "DOTUSDT",
+    "LINKUSDT"
+  ],
+  "funding_checks": 5368,
+  "funding_mismatches": 0,
+  "settlements": 8,
+  "wallet_total_sat": 353732369404,
+  "model_in_wallet_window_sat": 353732369404,
+  "aggregate_residual_sat": 0,
+  "max_abs_contract_aggregate_residual_sat": 0,
+  "outside_wallet_window_sat": 1958048,
+  "nonzero_end_positions": [
+    {
+      "symbol": "XBTUSD",
+      "terminal_position": -29080100,
+      "terminal_cost_sat": 56922139118
+    }
+  ],
+  "calendar_days": 1398,
+  "complete_reference_days": 1397,
+  "missing_mark_days": [
+    "2018-05-03"
+  ],
+  "max_event_active_contracts": 8,
+  "max_daily_active_contracts": 8,
+  "btc_net_short_but_positive_usd_btc_delta_days": 499,
+  "max_reference_gross_ratio": {
+    "date": "2018-03-20",
+    "active_contracts": 1,
+    "missing_mark_contracts": 0,
+    "cash_flow_sat": 116503238,
+    "model_wallet_btc": 1.47048245,
+    "known_unrealised_btc": 0.27118483457722664,
+    "reference_equity_btc": 1.7416672845772267,
+    "reference_equity_usd": 15493.083500312683,
+    "gross_reference_value_usd": 500000.00000000006,
+    "gross_value_to_reference_equity": 32.27246532234265,
+    "btc_collateral_value_usd": 13080.746010065039,
+    "btc_factor_delta_usd": -484506.91649929463,
+    "btc_derivative_delta_usd": -497587.66250935965,
+    "alt_factor_delta_usd": 0.0,
+    "btc_inverse_net_contracts": -500000,
+    "futures_gross_reference_usd": 0.0,
+    "largest_alt_factor_abs_usd": 0.0,
+    "largest_alt_factor": "",
+    "model_wallet_sat": 147048245,
+    "cash_date_ambiguity": false
+  },
+  "end_snapshot": {
+    "date": "2021-12-31",
+    "active_contracts": 1,
+    "missing_mark_contracts": 0,
+    "cash_flow_sat": 0,
+    "model_wallet_btc": 737.28931453,
+    "known_unrealised_btc": 58.11172056271759,
+    "reference_equity_btc": 795.4010350927174,
+    "reference_equity_usd": 36870908.30634486,
+    "gross_reference_value_usd": 29080100.000000004,
+    "gross_value_to_reference_equity": 0.7887003964856437,
+    "btc_collateral_value_usd": 34177132.681395955,
+    "btc_factor_delta_usd": 7790808.306336403,
+    "btc_derivative_delta_usd": -26386324.375059552,
+    "alt_factor_delta_usd": 0.0,
+    "btc_inverse_net_contracts": -29080100,
+    "futures_gross_reference_usd": 0.0,
+    "largest_alt_factor_abs_usd": 0.0,
+    "largest_alt_factor": "",
+    "model_wallet_sat": 73728931453,
+    "cash_date_ambiguity": false
+  },
+  "interpretation": "UTC daily-close spot-reference revaluation with zero futures basis, not exchange marks, actual margin leverage, liquidation prices, VaR or audited NAV.",
+  "positive_complete_reference_days": 1390,
+  "btc_net_short_positive_equity_days": 821,
+  "zero_reference_equity_days": [
+    "2018-03-22",
+    "2018-03-23",
+    "2018-03-24",
+    "2018-03-25",
+    "2018-03-26",
+    "2018-03-27",
+    "2018-03-28"
+  ],
+  "negative_reference_equity_days": [],
+  "remaining_contract_day_residuals": 16,
+  "remaining_absolute_residual_sum_sat": 18
+}

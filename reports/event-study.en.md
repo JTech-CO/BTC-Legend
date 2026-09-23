@@ -4,6 +4,8 @@ Research v0.3, 23 September 2026. [한국어](event-study.ko.md) · [Accounting 
 
 ## Findings
 
+The subsequent [v0.4 portfolio study](portfolio-risk.en.md) reconciles all 46 contracts and adds conditional valuation, cross-contract offsets and static stress scenarios. This v0.3 event study retains its original accounting boundaries and episode definitions.
+
 Large results arose from several mechanisms: repeated directional changes during a crash, simultaneous positions in different contracts, and large inventories held for days or weeks. Passive execution and funding sometimes helped, but did not prevent substantial losses. A liquidation label describes a particular execution; it does not determine the profit of the preceding position episode or the solvency of the entire account.
 
 The full text scan finds **59 liquidation-labelled fills**, including the previously reported **28 zero-order-ID fills**. The additional 31 fills have one valid ETHUSD order ID and one timestamp. There are **29 timestamp/order groups**, comprising 28 reconstructed flat closes and one partial reduction. These are observable execution groups, not a verified count of independent margin calls.

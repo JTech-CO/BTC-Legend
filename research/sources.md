@@ -34,6 +34,15 @@ Event study v0.3 additionally checked two contemporaneous primary sources on 202
 
 The event study reuses the saved historical Coin Metrics BTC/USD and USDT/USD references. It does not refresh the 2026 current-market snapshot or substitute daily closes for intraday marks.
 
+Portfolio study v0.4 added the following inputs and targeted primary-source checks on 2026-09-23, separately from the original Exa count:
+
+- S18: [BitMEX Get Instruments](https://docs.bitmex.com/api-explorer/get-instruments). A public filtered response covering all 46 symbols is saved in [instrument_metadata.json](../data/portfolio_market/instrument_metadata.json). The endpoint includes settled/unlisted products but is not a historical version archive. Five USDT symbols now describe USDt-settled products; historical XBt-settled definitions use S6, S7, S8 and S19 instead. 현재 명세의 재사용 심볼을 과거 계약에 그대로 적용하지 않았습니다.
+- S19: [BitMEX LINKUSDT launch](https://www.bitmex.com/blog/introducing-a-new-linkusdt-quanto-perpetual-contract-and-increased-leverage-on-our-linkusdt-quanto-future-contract), 2020-10-12. Historical 10,000-satoshi multiplier and XBT settlement for the LINK/USDT quote. 과거 콴토 승수·정산 근거.
+- S20: [BitMEX UP/DOWN product update](https://www.bitmex.com/blog/ups-and-downs-product-update), 2018-06-07. Identifies XBT7D_U110 as a strike-based UP product. Used to exclude an unobserved option fair value from ordinary futures marking, not to infer its May strike or premium.
+- D4: Twelve additional [Coin Metrics community](https://github.com/coinmetrics/data) USD reference series: ETH, XRP, BCH, LTC, ADA, EOS, TRX, DOGE, BNB, DOT, LINK and YFI. The research-period extracts and response/file hashes are in [portfolio retrieval.json](../data/portfolio_market/retrieval.json). Existing BTC/USDT snapshots are unchanged. Daily reference prices support an explicitly zero-basis spot-reference scenario, not exchange derivative marks.
+
+Portfolio raw-account hashes, market input hashes and results are in [the v0.4 summary](../results/portfolio_risk/summary.json). Saved market inputs permit offline reproduction. Later downloads may contain historical revisions; no current or historical gap is filled with a news quotation.
+
 Undated live-price pages and stale search snippets were rejected as current-price evidence. An initial Coinbase public candle request returned HTTP 403; the study uses successfully retrieved Bitstamp/Binance data instead. No missing observations were filled with news prices.
 
 공개 데이터 접근 가능 여부는 재배포 라이선스 확인과 다릅니다. 원본 계정 파일과 서한의 공개 권한은 이 연구에서 확정하지 않았으며, 실제 GitHub 공개 전에 소유자가 결정할 사항입니다.

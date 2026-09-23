@@ -1,0 +1,10 @@
+{
+  "asset": "xrp",
+  "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/xrp.csv",
+  "retrieved_at_utc": "2026-09-23T03:28:06.482015+00:00",
+  "status": "ok",
+  "rows": 1402,
+  "valid_prices": 1402,
+  "raw_response_sha256": "251ed578003a742e42e3fb239af5c765903384b4cc42fee6b3872be8a5b0b568",
+  "file_sha256": "8a8b3d37ceeca95a6cc2476c4a2b89a1a0dc610e03150df37d30819a65561970"
+}

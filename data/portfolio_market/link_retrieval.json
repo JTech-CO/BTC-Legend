@@ -1,0 +1,10 @@
+{
+  "asset": "link",
+  "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/link.csv",
+  "retrieved_at_utc": "2026-09-23T03:28:07.360578+00:00",
+  "status": "ok",
+  "rows": 1402,
+  "valid_prices": 1402,
+  "raw_response_sha256": "721fd2c5f0e131357782f2a23585c16f9da5a394c1a6ab0de910f4375ad5fb34",
+  "file_sha256": "f2c7115a6a9d152ae8a954074e45ef37c8aba0987daa137d441a666396421c4a"
+}

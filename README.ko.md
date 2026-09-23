@@ -11,6 +11,7 @@
 | 핵심 발견과 당시·현재 시장 비교 | [한국어 연구 보고서](reports/research.ko.md) · [English](reports/research.en.md) |
 | 후속 회계 차이 추적 | [한국어 v0.2](reports/accounting-audit.ko.md) · [English v0.2](reports/accounting-audit.en.md) |
 | 큰 이익·손실·청산 사건 | [한국어 v0.3](reports/event-study.ko.md) · [English v0.3](reports/event-study.en.md) |
+| 전체 포트폴리오 위험 복원 | [한국어 v0.4](reports/portfolio-risk.ko.md) · [English v0.4](reports/portfolio-risk.en.md) |
 | 단위·회계·데이터 품질·재현 방법 | [한국어 방법론](research/methodology.ko.md) · [English](research/methodology.en.md) |
 | 외부 근거 | [출처 목록](research/sources.md) |
 | 수치 원본 | [계정 집계](results/summary.json) · [시장 집계](results/market_summary.json) |
@@ -26,3 +27,5 @@
 재현 명령은 [영문 README](README.md#reproduce-locally)에 있습니다. 저장된 시장 자료로 오프라인 재실행할 수 있습니다. 원본은 보존했으며, 현재 비교는 **2026.09.22 UTC 일봉 종료 시점**을 기준으로 합니다. 데이터 공개 권한이나 라이선스는 임의로 확정하지 않았습니다.
 
 후속 회계 연구에서는 기존 XBTUSD 총차이 **0.02745234 BTC**를 정산 범위 밖 펀딩 **0.01958048 BTC**와 원가 배분 차이 **0.00787186 BTC**로 설명했습니다. 개선 모델의 총차이는 0이며, 일별 12일에는 1~2사토시 차이가 남습니다. 지갑 차이 154일 중 152일은 표시 정밀도로 설명되고, 2일은 한 출금의 날짜·처리 순서 확인이 필요합니다. 기존 조건부 구간 통계는 비교용으로 유지하며 최신 회계 결과는 별도 [집계](results/accounting_audit/summary.json)에 있습니다.
+
+v0.4에서는 **46개 계약과 만기 정산 8건**을 복원했습니다. 모든 계약의 총실현손익과 원장이 각각 일치하고, 펀딩 수량 **5,368건**도 맞습니다. BTC 담보·USD/USDT 환산을 포함한 일별 기준가격 평가와 여덟 가지 고정 충격을 [포트폴리오 결과](results/portfolio_risk/summary.json)에 저장했습니다. 실제 마크가격 NAV나 레버리지가 아닌 조건부 시나리오이며, 현재 재사용된 USDT 심볼 다섯 개에는 당시 명세를 적용했습니다.
