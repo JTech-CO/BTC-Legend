@@ -1,0 +1,9 @@
+{
+  "python": "3.14.0",
+  "packages": {
+    "numpy": "2.3.4",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.7"
+  },
+  "dependency_policy": "requirements.txt gives supported ranges; validate on the chosen environment."
+}

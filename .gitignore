@@ -9,3 +9,8 @@ results/orders.csv
 results/extended_research/contract_event_states.csv.gz
 results/extended_research/executed_orders.csv
 data/historical_marks/raw/
+# Disposable local research index includes source extracts, never distribute it.
+results/explorer/*.sqlite
+results/explorer/*.sqlite-*
+dist/
+results/release/*.log

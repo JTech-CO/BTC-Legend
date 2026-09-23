@@ -4,12 +4,15 @@
 
 Empirical research on the supplied `aoa` trading and wallet export attributed by its provider to **워뇨띠 (Wonyotti)**. The requested study period is **1 March 2018–31 December 2021**. The first observed account event is **5 March 2018**. Attribution, authenticity and completeness outside these files have not been independently established.
 
-The project studies execution, inventory, realised performance, losses, collateral and market conditions. Its present deliverable is research, with no live trading, trade recommendations or exchange account integration. Future simulation or trading software is not categorically prohibited. No Git repository was initialized, and nothing was committed or pushed.
+The project studies execution, inventory, realised performance, losses, collateral and market conditions. Its present deliverable is research, with no live trading, trade recommendations or exchange account integration. Future simulation or trading software is not categorically prohibited. Changes are local; commits and publication remain with the owner.
 
 ## Read the research
 
 | Document | English | Korean |
 | --- | --- | --- |
+| Priorities 9-10: integrated white paper and research explorer | [White paper v0.7](reports/whitepaper.en.md) | [통합 백서 v0.7](reports/whitepaper.ko.md) |
+| Reproduction, local explorer and review package | [Execution guide](research/reproduction.en.md) | [실행 안내](research/reproduction.ko.md) |
+| Dataset grains, clocks, units and evidence classes | [Data dictionary](research/data-dictionary.en.md) | [데이터 사전](research/data-dictionary.ko.md) |
 | Findings, historical/current comparison, transferability | [Research report](reports/research.en.md) | [연구 보고서](reports/research.ko.md) |
 | Follow-up: accounting discrepancy attribution | [Accounting audit v0.2](reports/accounting-audit.en.md) | [회계 차이 추적 v0.2](reports/accounting-audit.ko.md) |
 | Follow-up: large gains, losses and liquidations | [Event study v0.3](reports/event-study.en.md) | [극단 손익·청산 연구 v0.3](reports/event-study.ko.md) |
@@ -33,6 +36,16 @@ The project studies execution, inventory, realised performance, losses, collater
 ![Market and wallet research](reports/figures/market_wallet.png)
 
 ## Reproduce locally
+
+Start with the [v0.7 reproduction guide](research/reproduction.en.md). The local explorer joins selected-day positions, executed orders, raw executions, wallet postings, USD/USDT references, sampled marks and explicit uncertainty. English is the default, with a Korean switch. After restoring the documented inputs and generated tables:
+
+```text
+python scripts/reproduce.py --mode verify
+python scripts/build_explorer.py
+python scripts/serve_explorer.py
+```
+
+Open `http://127.0.0.1:8765`. The disposable SQLite index is about 0.88 GB and excluded from Git. `verify` checks saved results; `python scripts/reproduce.py --mode rebuild --explorer` recalculates the pipeline from the locked inputs. This release passed 44 unit tests, five existing research verification suites and 34 explorer controls; a fresh full financial rebuild was not run for this release. The [local review bundle procedure](research/reproduction.en.md) excludes raw inputs and the index. It does not grant redistribution rights.
 
 Python 3.11+ and the packages in `requirements.txt` are sufficient. The supplied source CSVs must remain in `data/` under their original filenames. Commands below run from the project root.
 

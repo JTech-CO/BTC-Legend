@@ -4,10 +4,13 @@
 
 제공자가 **워뇨띠**의 기록으로 제시한 `aoa` 계정의 체결·지갑 CSV를 분석하는 연구 프로젝트입니다. 연구 대상 기간은 **2018.03.01–2021.12.31**이며, 실제 첫 기록은 **2018.03.05**입니다. 계정 귀속, 원본의 진위, 다른 계좌를 포함한 전체성은 별도로 인증하지 않았습니다.
 
-현재 작업은 금융·암호화폐 시장 관점의 분석입니다. 실시간 매매, 특정 시점의 매수·매도 권고, 거래소 계정 연결은 구현하지 않았습니다. 향후 시뮬레이션이나 매매 프로그램 개발 자체를 금지하는 프로젝트는 아닙니다. Git 저장소 초기화·커밋·푸시는 수행하지 않았습니다.
+현재 작업은 금융·암호화폐 시장 관점의 분석입니다. 실시간 매매, 특정 시점의 매수·매도 권고, 거래소 계정 연결은 구현하지 않았습니다. 향후 시뮬레이션이나 매매 프로그램 개발 자체를 금지하는 프로젝트는 아닙니다. 파일은 로컬에서 수정하며 커밋과 공개는 소유자가 진행합니다.
 
 | 자료 | 링크 |
 | --- | --- |
+| 우선순위 9-10: 통합 백서·연구 탐색기 | [한국어 백서 v0.7](reports/whitepaper.ko.md) · [English](reports/whitepaper.en.md) |
+| 재현·로컬 탐색기·검토 패키지 실행 | [한국어 실행 안내](research/reproduction.ko.md) · [English](research/reproduction.en.md) |
+| 데이터 단위·시각·근거 수준 | [한국어 데이터 사전](research/data-dictionary.ko.md) · [English](research/data-dictionary.en.md) |
 | 핵심 발견과 당시·현재 시장 비교 | [한국어 연구 보고서](reports/research.ko.md) · [English](reports/research.en.md) |
 | 후속 회계 차이 추적 | [한국어 v0.2](reports/accounting-audit.ko.md) · [English v0.2](reports/accounting-audit.en.md) |
 | 큰 이익·손실·청산 사건 | [한국어 v0.3](reports/event-study.ko.md) · [English v0.3](reports/event-study.en.md) |
@@ -18,6 +21,20 @@
 | 단위·회계·데이터 품질·재현 방법 | [한국어 방법론](research/methodology.ko.md) · [English](research/methodology.en.md) |
 | 외부 근거 | [출처 목록](research/sources.md) |
 | 수치 원본 | [계정 집계](results/summary.json) · [시장 집계](results/market_summary.json) |
+
+## 로컬 연구 탐색기와 통합 재현
+
+v0.7 탐색기는 날짜·계약별 포지션, 부모 주문, 원본 체결, 지갑 기장, USD/USDT 기준가격, 표본 마크가격과 불확실성을 연결합니다. EN이 기본이며 KR로 전환할 수 있습니다. [실행 안내](research/reproduction.ko.md)에 따라 원본과 파생표를 준비한 뒤 실행합니다.
+
+```text
+python scripts/reproduce.py --mode verify
+python scripts/build_explorer.py
+python scripts/serve_explorer.py
+```
+
+브라우저에서 `http://127.0.0.1:8765`를 엽니다. 약 0.88 GB의 로컬 SQLite 색인은 Git에서 제외합니다. `verify`는 저장된 결과를 검증하며, `python scripts/reproduce.py --mode rebuild --explorer`는 잠긴 입력에서 전체 파이프라인을 재계산합니다. 이번 버전은 단위 테스트 44개, 기존 연구 검증 5종, 탐색기 검증 34개를 통과했습니다. 금융 분석 전체를 원본부터 새로 재계산한 실행과는 구분합니다. 원본과 색인을 제외한 로컬 검토 패키지 구성도 실행 안내에 기록했으며, 배포 권한을 부여하는 것은 아닙니다.
+
+## 주요 연구 결과
 
 핵심 결과는 **체결 1,439,207건**, **식별 가능한 주문 23,416개**, **주문 ID가 0인 청산 표시 체결 28건**입니다. 청산 체결은 주문 복원에서 분리하지만 손익·포지션 집계에서는 유지합니다. 계좌 전체 순실현손익은 **3,537.32369404 BTC**이고, 그중 XBTUSD는 **2,007.08464645 BTC(약 56.74%)**입니다.
 

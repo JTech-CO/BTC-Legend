@@ -1,0 +1,56 @@
+{
+  "mode": "verify",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "started_utc": "2026-09-23T05:51:54.235402+00:00",
+  "steps": [
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "results/release/run_01_unittest.log"
+    },
+    {
+      "command": [
+        "scripts/verify.py"
+      ],
+      "exit_code": 0,
+      "log": "results/release/run_02_verify.log"
+    },
+    {
+      "command": [
+        "scripts/verify_event_study.py"
+      ],
+      "exit_code": 0,
+      "log": "results/release/run_03_verify_event_study.log"
+    },
+    {
+      "command": [
+        "scripts/verify_portfolio_risk.py"
+      ],
+      "exit_code": 0,
+      "log": "results/release/run_04_verify_portfolio_risk.log"
+    },
+    {
+      "command": [
+        "scripts/verify_extended_research.py"
+      ],
+      "exit_code": 0,
+      "log": "results/release/run_05_verify_extended_research.log"
+    },
+    {
+      "command": [
+        "scripts/verify_research_robustness.py"
+      ],
+      "exit_code": 0,
+      "log": "results/release/run_06_verify_research_robustness.log"
+    }
+  ],
+  "all_pass": true
+}

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BTC-Legend | Research explorer</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body><header><div><a class="brand" href="/">BTC<span>·</span>LEGEND</a><span class="tag">RESEARCH / v0.7</span></div><button id="language" aria-label="Switch language">한국어</button></header>
+<main><section class="intro"><p class="eyebrow" data-i18n="eyebrow"></p><h1 data-i18n="title"></h1><p data-i18n="subtitle"></p></section>
+<form id="controls"><label><span data-i18n="date"></span><input id="date" type="date" min="2018-03-01" max="2021-12-31" value="2021-05-20" required></label><label><span data-i18n="contract"></span><select id="symbol"><option value="">All contracts</option></select></label><button type="submit" data-i18n="inspect"></button><button type="button" id="export" data-i18n="export"></button></form>
+<nav id="cases" aria-label="Research cases"><button data-date="2018-03-09">2018-03-09</button><button data-date="2018-05-03">2018-05-03</button><button data-date="2020-03-12">2020-03-12</button><button data-date="2021-05-20">2021-05-20</button><button data-date="2021-06-01">2021-06-01</button><button data-date="2021-12-31">2021-12-31</button></nav>
+<p id="status" role="status" aria-live="polite"></p><aside id="warnings"></aside><section id="cards" class="cards"></section>
+<section class="panel"><h2 data-i18n="marketTitle"></h2><p data-i18n="marketNote"></p><div id="market" class="table-wrap"></div></section>
+<section class="panel"><div class="section-title"><h2 data-i18n="trend"></h2><span class="chip" data-i18n="conditional"></span></div><p data-i18n="trendNote"></p><div id="trend" class="chart"></div></section>
+<section class="panel"><h2 data-i18n="positions"></h2><p data-i18n="scope"></p><h3 data-i18n="opening"></h3><div id="opening" class="table-wrap"></div><h3 data-i18n="closing"></h3><div id="closing" class="table-wrap"></div></section>
+<section class="panel"><div class="section-title"><h2 data-i18n="orders"></h2><span id="order-count" class="chip"></span></div><p data-i18n="ordersNote"></p><div id="orders" class="table-wrap"></div></section>
+<section class="panel"><h2 data-i18n="events"></h2><p data-i18n="eventsNote"></p><div id="events" class="table-wrap"></div><div class="paging"><button id="events-prev" data-i18n="previous"></button><span id="events-page"></span><button id="events-next" data-i18n="next"></button></div></section>
+<section class="panel" id="source-panel" hidden><h2 data-i18n="source"></h2><p id="source-key"></p><div id="fills" class="table-wrap"></div><div class="paging"><button id="fills-prev" data-i18n="previous"></button><span id="fills-page"></span><button id="fills-next" data-i18n="next"></button></div></section>
+<section class="panel"><h2 data-i18n="wallet"></h2><p data-i18n="walletNote"></p><div id="wallet" class="table-wrap"></div></section>
+<section class="panel"><h2 data-i18n="funding"></h2><p data-i18n="fundingNote"></p><div id="funding" class="table-wrap"></div></section>
+<section class="panel"><div class="section-title"><h2 data-i18n="marks"></h2><span id="mark-count" class="chip"></span></div><p data-i18n="marksNote"></p><div id="marks-chart" class="chart"></div><details><summary data-i18n="priceTail"></summary><div id="prices" class="table-wrap"></div></details></section>
+<section class="panel"><h2 data-i18n="returns"></h2><p data-i18n="returnsNote"></p><div id="returns" class="table-wrap"></div></section>
+<section class="panel"><h2 data-i18n="provenance"></h2><p data-i18n="provenanceNote"></p><details><summary data-i18n="hashes"></summary><div id="hashes" class="table-wrap"></div></details></section>
+</main><footer data-i18n="footer"></footer></body></html>
