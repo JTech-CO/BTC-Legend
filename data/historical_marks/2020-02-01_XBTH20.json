@@ -1,0 +1,28 @@
+{
+  "date": "2020-02-01",
+  "symbol": "XBTH20",
+  "url": "https://datasets.tardis.dev/v1/bitmex/derivative_ticker/2020/02/01/XBTH20.csv.gz",
+  "retrieved_at_utc": "2026-09-23T03:50:22.205182+00:00",
+  "raw_file": "data/historical_marks/raw/2020-02-01_XBTH20.csv.gz",
+  "source_type": "third-party capture of exchange derivative ticker; public first-day sample",
+  "status": "ok",
+  "bytes": 291288,
+  "rows": 19913,
+  "sha256": "f70534f8b3785f74e00ab786cca5fb19e8e21822e573ff3ff003fbe6e894ac59",
+  "columns": [
+    "exchange",
+    "symbol",
+    "timestamp",
+    "local_timestamp",
+    "funding_timestamp",
+    "funding_rate",
+    "predicted_funding_rate",
+    "open_interest",
+    "last_price",
+    "index_price",
+    "mark_price"
+  ],
+  "first_timestamp": 1580515195000000,
+  "last_timestamp": 1580601585000000,
+  "valid_marks": 19913
+}

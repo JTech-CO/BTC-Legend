@@ -1,0 +1,10 @@
+{
+  "results/portfolio_risk/summary.json": "22f42b4b23ec6adaa3f4a21979b62f5f49eb6c89418b668fec2eea60f62a9cca",
+  "results/portfolio_risk/daily_reference_risk.csv": "d596cb75ce5b70422de7865ae0fab219ee5b8c8546e4784aaf010ff35882fe22",
+  "results/portfolio_risk/daily_inventory_all_contracts.csv": "8e58e1d0675078994011c0507a90df538377ed23196e8e717de1aa860513d82f",
+  "results/portfolio_risk/contract_registry.csv": "3b84af6c71a280bf222bbe6ea538cf9993bc1e78b94fcb3627835b8e878bea7e",
+  "results/portfolio_risk/reference_prices.csv": "9b24c0c045df952f219a9050f73003c016628af24dcd51528e5e6ab81daab8cd",
+  "results/event_study/xbtusd_episodes.csv": "ac9a62bbd53f6394bc3bc8487ae9b1ef3248a0a11f31fb4e16c3d6443d84b8d9",
+  "results/historical_market_daily.csv": "d6caefeda1eb7440abcc4585a1d3c76dadeaa2b9d8751ae08bf0f4ceed3bf5ed",
+  "data/historical_marks/retrieval.json": "d8d44f75631e03acbf88d5e6fe1f9497c72bbaac029b3e566ea7b5610fd93fb1"
+}

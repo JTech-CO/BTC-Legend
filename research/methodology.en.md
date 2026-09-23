@@ -6,6 +6,8 @@ The [v0.2 accounting audit](../reports/accounting-audit.en.md) refines this base
 
 The [v0.4 portfolio methodology](../reports/portfolio-risk.en.md) extends the scope to every supplied contract, settlement and funding record. Its daily reference marks and static risk scenarios remain separate from validated realised accounting and from this v0.1 baseline.
 
+The [v0.5 extension](../reports/marks-intraday-returns.en.md) specifies historical mark sampling, conservative as-of matching, post-timestamp inventory peaks and cash-flow timing scenarios. The [behaviour methodology](../reports/behavior-changes.en.md) distinguishes fills, executed orders and holding episodes, with year/quarter/regime comparisons. Conditional linked returns retain spot-reference valuation; they are not a continuous actual NAV series.
+
 ## 1. Preserve and validate the inputs
 
 The five supplied CSVs are read without modification. SHA-256, bytes and row counts identify each original. Execution IDs must be non-null and globally unique. Trade quantities/prices must be positive and directions must be Buy/Sell. All observed settlement currencies are `XBt`. The script fails if these conditions change. No losses, liquidation rows or outliers are trimmed.

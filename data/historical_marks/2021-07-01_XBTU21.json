@@ -1,0 +1,28 @@
+{
+  "date": "2021-07-01",
+  "symbol": "XBTU21",
+  "url": "https://datasets.tardis.dev/v1/bitmex/derivative_ticker/2021/07/01/XBTU21.csv.gz",
+  "retrieved_at_utc": "2026-09-23T03:50:27.839820+00:00",
+  "raw_file": "data/historical_marks/raw/2021-07-01_XBTU21.csv.gz",
+  "source_type": "third-party capture of exchange derivative ticker; public first-day sample",
+  "status": "ok",
+  "bytes": 367233,
+  "rows": 23486,
+  "sha256": "3127a1a0be43ee05dcc17978a9c3daba33382048d39b0431313ab646b875895e",
+  "columns": [
+    "exchange",
+    "symbol",
+    "timestamp",
+    "local_timestamp",
+    "funding_timestamp",
+    "funding_rate",
+    "predicted_funding_rate",
+    "open_interest",
+    "last_price",
+    "index_price",
+    "mark_price"
+  ],
+  "first_timestamp": 1625097600000000,
+  "last_timestamp": 1625183995000000,
+  "valid_marks": 23486
+}

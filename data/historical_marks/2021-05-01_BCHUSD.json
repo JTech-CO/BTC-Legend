@@ -1,0 +1,28 @@
+{
+  "date": "2021-05-01",
+  "symbol": "BCHUSD",
+  "url": "https://datasets.tardis.dev/v1/bitmex/derivative_ticker/2021/05/01/BCHUSD.csv.gz",
+  "retrieved_at_utc": "2026-09-23T03:50:25.595227+00:00",
+  "raw_file": "data/historical_marks/raw/2021-05-01_BCHUSD.csv.gz",
+  "source_type": "third-party capture of exchange derivative ticker; public first-day sample",
+  "status": "ok",
+  "bytes": 350952,
+  "rows": 25533,
+  "sha256": "bb69114d8192e28e8c96067b321c8f73db03f9ca79f27b56d5c7ea233af5b768",
+  "columns": [
+    "exchange",
+    "symbol",
+    "timestamp",
+    "local_timestamp",
+    "funding_timestamp",
+    "funding_rate",
+    "predicted_funding_rate",
+    "open_interest",
+    "last_price",
+    "index_price",
+    "mark_price"
+  ],
+  "first_timestamp": 1619827200000000,
+  "last_timestamp": 1619913599959000,
+  "valid_marks": 25533
+}

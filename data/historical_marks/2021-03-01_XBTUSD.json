@@ -1,0 +1,28 @@
+{
+  "date": "2021-03-01",
+  "symbol": "XBTUSD",
+  "url": "https://datasets.tardis.dev/v1/bitmex/derivative_ticker/2021/03/01/XBTUSD.csv.gz",
+  "retrieved_at_utc": "2026-09-23T03:50:25.076237+00:00",
+  "raw_file": "data/historical_marks/raw/2021-03-01_XBTUSD.csv.gz",
+  "source_type": "third-party capture of exchange derivative ticker; public first-day sample",
+  "status": "ok",
+  "bytes": 1445844,
+  "rows": 110557,
+  "sha256": "1304a099281719fcdf20f8340492f87870f67f0b052c179ad70f9eec3423aaad",
+  "columns": [
+    "exchange",
+    "symbol",
+    "timestamp",
+    "local_timestamp",
+    "funding_timestamp",
+    "funding_rate",
+    "predicted_funding_rate",
+    "open_interest",
+    "last_price",
+    "index_price",
+    "mark_price"
+  ],
+  "first_timestamp": 1614556802255000,
+  "last_timestamp": 1614643197226000,
+  "valid_marks": 110557
+}

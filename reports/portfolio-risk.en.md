@@ -4,6 +4,8 @@ Research v0.4, 23 September 2026. [한국어](portfolio-risk.ko.md) · [Event st
 
 ## What has been reconstructed
 
+The subsequent [v0.5 extension](marks-intraday-returns.en.md) adds observed monthly mark/index samples, intraday inventory and conditional cash-flow-adjusted returns. It measures differences from this retained v0.4 zero-basis baseline rather than replacing its assumptions silently.
+
 All **46 contracts**, including eight settlement events, now have instrument-specific inventory and cost reconstruction. **Every contract's aggregate realised PNL matches its wallet total exactly** within the reporting window. The reconstructed account total is **3,537.32369404 BTC**. All **5,368 funding-position checks match**. Sixteen contract/date comparisons retain differences of one or two satoshis, with an absolute sum of 18 satoshis and net zero.
 
 This establishes substantially stronger portfolio accounting than the previous XBTUSD-only reconstruction. It does not supply historical exchange marks, margin allocations or liquidation thresholds. The valuation and stress layer below is a separately labelled **daily spot-reference scenario**, with zero perpetual/futures basis. It is not an audited NAV series or actual account leverage.

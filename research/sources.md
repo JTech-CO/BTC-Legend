@@ -43,6 +43,17 @@ Portfolio study v0.4 added the following inputs and targeted primary-source chec
 
 Portfolio raw-account hashes, market input hashes and results are in [the v0.4 summary](../results/portfolio_risk/summary.json). Saved market inputs permit offline reproduction. Later downloads may contain historical revisions; no current or historical gap is filled with a news quotation.
 
+Extension v0.5 used targeted primary/provider documentation on 2026-09-23, separately from the original Exa count:
+
+- S21: [Tardis BitMEX coverage](https://docs.tardis.dev/historical-data-details/bitmex). Capture begins 2019-03-30; public first-day-of-month CSV access supports the deterministic April 2019–December 2021 sample. This is the data collector's own coverage documentation, not independent authentication of the account. 월초 표본 범위의 근거이며 전체 기간 관측이 아닙니다.
+- S22: [Tardis derivative ticker schema](https://docs.tardis.dev/downloadable-csv-files/data-types.md). Exchange/collector timestamps and separate last, index and mark prices; funding fields concern upcoming events. Source for field interpretation and the conservative as-of alignment rule. 필드 의미를 확인하고 실제 펀딩 비용은 계좌 원본을 유지합니다.
+- S23: [BitMEX bucketed trade endpoint](https://docs.bitmex.com/api-explorer/get-trade-bucketed). Bucket timestamps label the interval end. Reviewed during source discovery; no bucketed trade price is relabelled as a historical mark.
+- S24: [GIPS Standards Handbook for Firms](https://www.gipsstandards.org/standards/gips-standards-for-firms/gips-standards-handbook-for-firms/), November 2020. Reference for external-flow adjustment, valuation timing and daily-weighted return methodology. Methodological reference only; no claim of GIPS compliance. 외부 흐름과 평가 시각 방법론 참고이며 인증된 성과가 아닙니다.
+- S25: [BitMEX Q1 2021 futures listings](https://www.bitmex.com/blog/q1-2021-quarterly-futures-listings). Contemporaneous identification of XRPH21 as XRP/Bitcoin; prevents treating its quote as XRP/USD when interpreting the captured basis.
+- D5: 54 Tardis `derivative_ticker` files across 10 symbols and 33 monthly first-day samples. Exact public URLs, retrieval timestamps, byte counts and SHA-256 hashes are in [historical mark retrieval.json](../data/historical_marks/retrieval.json). Raw captured files remain local and Git-ignored; derived prices, coverage, basis and account valuation comparisons are in `results/extended_research/`. Monthly samples are never interpolated into full-period NAV.
+
+The v0.5 [input manifest](../results/extended_research/input_manifest.json) records reused upstream files, and [validation](../results/extended_research/validation.json) checks raw account/capture hashes and accounting, quantity, timing and return identities. Current 2026 market data were not refreshed in this extension. 이전 시장 스냅샷과 원본 계좌 자료는 보존했습니다.
+
 Undated live-price pages and stale search snippets were rejected as current-price evidence. An initial Coinbase public candle request returned HTTP 403; the study uses successfully retrieved Bitstamp/Binance data instead. No missing observations were filled with news prices.
 
 공개 데이터 접근 가능 여부는 재배포 라이선스 확인과 다릅니다. 원본 계정 파일과 서한의 공개 권한은 이 연구에서 확정하지 않았으며, 실제 GitHub 공개 전에 소유자가 결정할 사항입니다.

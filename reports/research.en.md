@@ -8,6 +8,8 @@ Event update: [v0.3 large-gain/loss and liquidation study](event-study.en.md) re
 
 Portfolio update: [v0.4 portfolio reconstruction](portfolio-risk.en.md) extends inventory/cost accounting to all 46 contracts and adds explicitly conditional spot-reference valuation and stress. The v0.1 statistics below remain the historical baseline.
 
+Further research: [v0.5 marks, intraday exposure and cash-flow-adjusted returns](marks-intraday-returns.en.md) adds observed monthly mark samples and timing sensitivity; [v0.5 behaviour changes](behavior-changes.en.md) compares order frequency, scale, holding time and instrument mix. These do not replace the original baseline or establish continuous actual NAV returns.
+
 ## Research conclusion
 
 The supplied account generated substantial **realised BTC profits across both rising and falling BTC markets**. Its results cannot be reduced to a BTC buy-and-hold position or one disclosed technical indicator. The records support an account that traded both directions, scaled order sizes, increasingly supplied liquidity, and earned substantial profits from non-BTC contracts. They also document liquidation-labelled executions and severe realised losses.

@@ -1,0 +1,258 @@
+{
+  "version": "0.5",
+  "valuation_basis": "Daily spot-reference scenario, not continuous historical exchange NAV or GIPS-compliant performance.",
+  "deposit_btc": 14.48925714,
+  "withdrawal_btc": 2814.54321713,
+  "terminal_reference_equity_btc": 795.4010350927174,
+  "flow_adjusted_lifetime_gain_btc": 3595.4549950827172,
+  "full_period_linked_return": null,
+  "reason_full_period_unavailable": "Missing option valuation, zero/nonpositive capital and unresolved cash dates break the chain; no gap is skipped.",
+  "validity_counts": [
+    {
+      "currency": "BTC",
+      "flow_timing": "BOD",
+      "status": "cash_date_ambiguity",
+      "days": 2
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "BOD",
+      "status": "missing_valuation",
+      "days": 2
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "BOD",
+      "status": "nonpositive_capital",
+      "days": 6
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "BOD",
+      "status": "nonpositive_link_factor",
+      "days": 1
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "BOD",
+      "status": "valid",
+      "days": 1387
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "EOD",
+      "status": "cash_date_ambiguity",
+      "days": 2
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "EOD",
+      "status": "missing_valuation",
+      "days": 2
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "EOD",
+      "status": "nonpositive_capital",
+      "days": 8
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "EOD",
+      "status": "nonpositive_link_factor",
+      "days": 1
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "EOD",
+      "status": "valid",
+      "days": 1385
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "MID",
+      "status": "cash_date_ambiguity",
+      "days": 2
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "MID",
+      "status": "missing_valuation",
+      "days": 2
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "MID",
+      "status": "nonpositive_capital",
+      "days": 6
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "MID",
+      "status": "nonpositive_link_factor",
+      "days": 1
+    },
+    {
+      "currency": "BTC",
+      "flow_timing": "MID",
+      "status": "valid",
+      "days": 1387
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "BOD",
+      "status": "cash_date_ambiguity",
+      "days": 2
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "BOD",
+      "status": "missing_valuation",
+      "days": 2
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "BOD",
+      "status": "nonpositive_capital",
+      "days": 6
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "BOD",
+      "status": "nonpositive_link_factor",
+      "days": 1
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "BOD",
+      "status": "valid",
+      "days": 1387
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "EOD",
+      "status": "cash_date_ambiguity",
+      "days": 2
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "EOD",
+      "status": "missing_valuation",
+      "days": 2
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "EOD",
+      "status": "nonpositive_capital",
+      "days": 8
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "EOD",
+      "status": "nonpositive_link_factor",
+      "days": 1
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "EOD",
+      "status": "valid",
+      "days": 1385
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "MID",
+      "status": "cash_date_ambiguity",
+      "days": 2
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "MID",
+      "status": "missing_valuation",
+      "days": 2
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "MID",
+      "status": "nonpositive_capital",
+      "days": 6
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "MID",
+      "status": "nonpositive_link_factor",
+      "days": 1
+    },
+    {
+      "currency": "USD",
+      "flow_timing": "MID",
+      "status": "valid",
+      "days": 1387
+    }
+  ],
+  "annual_sensitivity": [
+    {
+      "period": "2018",
+      "currency": "BTC",
+      "BOD": null,
+      "EOD": null,
+      "MID": null,
+      "timing_spread_percentage_points": null
+    },
+    {
+      "period": "2018",
+      "currency": "USD",
+      "BOD": null,
+      "EOD": null,
+      "MID": null,
+      "timing_spread_percentage_points": null
+    },
+    {
+      "period": "2019",
+      "currency": "BTC",
+      "BOD": 13.447317493591866,
+      "EOD": 12.551315652238339,
+      "MID": 12.968084422201459,
+      "timing_spread_percentage_points": 89.60018413535273
+    },
+    {
+      "period": "2019",
+      "currency": "USD",
+      "BOD": 27.08354134271623,
+      "EOD": 25.341840520680382,
+      "MID": 26.167288598121935,
+      "timing_spread_percentage_points": 174.1700822035849
+    },
+    {
+      "period": "2020",
+      "currency": "BTC",
+      "BOD": 3.4564729958337956,
+      "EOD": 3.298598920703217,
+      "MID": 3.3727420148739187,
+      "timing_spread_percentage_points": 15.787407513057872
+    },
+    {
+      "period": "2020",
+      "currency": "USD",
+      "BOD": 17.04543358238232,
+      "EOD": 16.406159847342916,
+      "MID": 16.720928210420574,
+      "timing_spread_percentage_points": 63.92737350394029
+    },
+    {
+      "period": "2021",
+      "currency": "BTC",
+      "BOD": 6.8372180921895405,
+      "EOD": 6.795743325181304,
+      "MID": 6.813944841193892,
+      "timing_spread_percentage_points": 4.147476700823649
+    },
+    {
+      "period": "2021",
+      "currency": "USD",
+      "BOD": 11.517633509380275,
+      "EOD": 11.451389859249703,
+      "MID": 11.484926859645709,
+      "timing_spread_percentage_points": 6.624365013057165
+    }
+  ]
+}

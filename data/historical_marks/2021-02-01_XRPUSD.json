@@ -1,0 +1,28 @@
+{
+  "date": "2021-02-01",
+  "symbol": "XRPUSD",
+  "url": "https://datasets.tardis.dev/v1/bitmex/derivative_ticker/2021/02/01/XRPUSD.csv.gz",
+  "retrieved_at_utc": "2026-09-23T03:50:24.799112+00:00",
+  "raw_file": "data/historical_marks/raw/2021-02-01_XRPUSD.csv.gz",
+  "source_type": "third-party capture of exchange derivative ticker; public first-day sample",
+  "status": "ok",
+  "bytes": 1900708,
+  "rows": 157229,
+  "sha256": "49737b7d2ab38b7e5839dbb92ddc71d0e56f2e0e7d83b8567aecc80ec1bad770",
+  "columns": [
+    "exchange",
+    "symbol",
+    "timestamp",
+    "local_timestamp",
+    "funding_timestamp",
+    "funding_rate",
+    "predicted_funding_rate",
+    "open_interest",
+    "last_price",
+    "index_price",
+    "mark_price"
+  ],
+  "first_timestamp": 1612137602025000,
+  "last_timestamp": 1612223997938000,
+  "valid_marks": 157229
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2021-05-01",
+  "symbol": "ETHUSD",
+  "url": "https://datasets.tardis.dev/v1/bitmex/derivative_ticker/2021/05/01/ETHUSD.csv.gz",
+  "retrieved_at_utc": "2026-09-23T03:50:25.837330+00:00",
+  "raw_file": "data/historical_marks/raw/2021-05-01_ETHUSD.csv.gz",
+  "source_type": "third-party capture of exchange derivative ticker; public first-day sample",
+  "status": "ok",
+  "bytes": 592283,
+  "rows": 43987,
+  "sha256": "4138a71439883afce93c0bff1bd8b8fcb4083d8966790d3e4a8e9191c3d0d137",
+  "columns": [
+    "exchange",
+    "symbol",
+    "timestamp",
+    "local_timestamp",
+    "funding_timestamp",
+    "funding_rate",
+    "predicted_funding_rate",
+    "open_interest",
+    "last_price",
+    "index_price",
+    "mark_price"
+  ],
+  "first_timestamp": 1619827200272000,
+  "last_timestamp": 1619913595000000,
+  "valid_marks": 43987
+}

@@ -5,3 +5,7 @@ data/aoa-*.csv
 data/*.txt
 # Large intermediate execution table; regenerate locally.
 results/orders.csv
+# Reproducible large event cache and separately captured provider archives.
+results/extended_research/contract_event_states.csv.gz
+results/extended_research/executed_orders.csv
+data/historical_marks/raw/

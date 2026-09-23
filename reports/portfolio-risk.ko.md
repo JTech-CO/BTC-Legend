@@ -1,5 +1,7 @@
 # 전체 포트폴리오 위험 복원
 
+후속 [v0.5 확장](marks-intraday-returns.ko.md)은 관측된 월초 마크·지수 표본, 장중 수량과 조건부 입출금 조정 수익률을 추가합니다. 이 v0.4 베이시스 0 기준 연구를 보존하고 차이를 측정하며, 가정을 임의로 대체하지 않습니다.
+
 연구 v0.4, 2026년 9월 23일. [English](portfolio-risk.en.md) · [선행 사건 연구](event-study.ko.md) · [수치 집계](../results/portfolio_risk/summary.json)
 
 ## 복원한 범위와 핵심 결과
