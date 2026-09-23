@@ -1,0 +1,8 @@
+date,transactid,account,currency,amount,transactstatus,address,network,text,timestamp,transacttime,transacttype,tx,walletbalance,source_row,amount_sat,walletbalance_sat
+2018-03-22,b54ebc9e-035c-e71c-8ea8-4a24a599a892,aoa,XBt,-196801713,Canceled,External exchange,btc,,24:48.7,21:09.2,Withdrawal,-,196801713,25,-196801713,196801713
+2018-04-18,21412309-b761-96fb-13a5-ad95c6e2e041,aoa,XBt,-100120000,Canceled,External exchange,btc,,25:33.6,24:35.5,Withdrawal,-,347227419,63,-100120000,347227419
+2018-04-18,c41ca133-a1da-4a43-3660-7a56ec10ff3d,aoa,XBt,-100120000,Canceled,External exchange,btc,,27:09.9,25:52.5,Withdrawal,-,347227419,64,-100120000,347227419
+2018-08-10,04e71ef5-9b64-8bd6-e311-48b992c48ef7,aoa,XBt,-250120000,Canceled,External exchange,btc,,17:03.5,15:14.7,Withdrawal,-,2131659798,292,-250120000,2131659798
+2018-08-13,76f88964-2af5-2f51-5d5d-fdf466de90f9,aoa,XBt,-50100000,Canceled,External exchange,btc,,28:43.6,28:16.3,Withdrawal,-,2722872838,301,-50100000,2722872838
+2018-11-25,6d5d6637-2b20-581c-19e9-583fa5b6158b,aoa,XBt,-100120000,Canceled,External exchange,btc,,40:21.6,39:22.5,Withdrawal,-,5134041160,543,-100120000,5134041160
+2018-12-07,a6d96d41-fe92-1584-279f-85218f8e0fda,aoa,XBt,-1001200000,Canceled,External exchange,btc,,57:22.7,56:16.2,Withdrawal,-,9743689374,571,-1001200000,9743689374

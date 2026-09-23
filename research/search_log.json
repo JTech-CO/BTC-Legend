@@ -1,0 +1,254 @@
+{
+  "as_of": "2026-09-23",
+  "provider": "Exa",
+  "workstreams": [
+    "Contract and accounting mechanics",
+    "Current market verification",
+    "Historical and structural comparability"
+  ],
+  "queries": 8,
+  "requested_result_slots": 40,
+  "unique_urls": 38,
+  "results": [
+    {
+      "search": 0,
+      "title": "XBTUSD: Contract Specification",
+      "url": "https://www.bitmex.com/app/contract/XBTUSD",
+      "published": "2026-06-16T12:00:10.000Z"
+    },
+    {
+      "search": 0,
+      "title": "Inverse Futures",
+      "url": "https://www.bitmex.com/app/inverseFuturesGuide",
+      "published": "N/A"
+    },
+    {
+      "search": 0,
+      "title": "How do I manually calculate my Realised PNL? – BitMEX",
+      "url": "https://support.bitmex.com/hc/en-gb/articles/6205277211037-How-do-I-manually-calculate-my-Realised-PNL",
+      "published": "N/A"
+    },
+    {
+      "search": 0,
+      "title": "How is Order Cost Calculated? – BitMEX",
+      "url": "https://support.bitmex.com/hc/en-gb/articles/6205267272605-How-is-Order-Cost-Calculated",
+      "published": "N/A"
+    },
+    {
+      "search": 0,
+      "title": "/instrument Field Definitions – BitMEX",
+      "url": "https://support.bitmex.com/hc/en-gb/articles/6206354894365--instrument-Field-Definitions",
+      "published": "N/A"
+    },
+    {
+      "search": 1,
+      "title": "Bitcoin Price: BTC Live Price Today | BTC Market Cap & ...",
+      "url": "https://www.bybit.com/en/price/bitcoin/",
+      "published": "N/A"
+    },
+    {
+      "search": 1,
+      "title": "Bitcoin Historical Data",
+      "url": "https://www.investing.com/crypto/bitcoin/historical-data",
+      "published": "N/A"
+    },
+    {
+      "search": 1,
+      "title": "CoinDesk Bitcoin Price Index (XBX) - BTCUSD",
+      "url": "https://www.marketwatch.com/investing/cryptocurrency/btcusd",
+      "published": "N/A"
+    },
+    {
+      "search": 1,
+      "title": "Bitcoin and ethereum prices today, Tuesday, September 22 ...",
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-september-22-2026-crypto-prices-continue-to-surge-to-prices-last-seen-in-january-114724449.html",
+      "published": "2026-09-22T11:29:10.305Z"
+    },
+    {
+      "search": 1,
+      "title": "Bitcoin (BTC) Price USD Today, News, Charts, Market Cap",
+      "url": "https://www.coinbase.com/price/bitcoin",
+      "published": "N/A"
+    },
+    {
+      "search": 2,
+      "title": "N/A",
+      "url": "https://www.sec.gov/files/rules/sro/nysearca/2024/34-99306.pdf",
+      "published": "N/A"
+    },
+    {
+      "search": 2,
+      "title": "SEC.gov | Statement on the Approval of Spot Bitcoin Exchange-Traded Products",
+      "url": "https://web.archive.org/web/20240110213139/https:/www.sec.gov/news/statement/gensler-statement-spot-bitcoin-011023",
+      "published": "N/A"
+    },
+    {
+      "search": 2,
+      "title": "This website is tracking the instability of stablecoin Tether",
+      "url": "https://thenextweb.com/news/tether-premium-cryptocurrency-exchange",
+      "published": "2018-10-16T00:00:00.000Z"
+    },
+    {
+      "search": 2,
+      "title": "SEC.gov | Out, Damned Spot! Out, I Say!: Statement on Omnibus Approval Order for List and Trade Bitcoin-Based Commodity-Based Trust Shares and Trust Units",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/peirce-statement-spot-bitcoin-011023",
+      "published": "N/A"
+    },
+    {
+      "search": 2,
+      "title": "Word on the Street: Chinese stock market rout may have added to Tether crash - Brave New Coin",
+      "url": "https://bravenewcoin.com/insights/word-on-the-street-chinese-stock-market-rout-may-have-added-to-usdt-crash",
+      "published": "2018-10-20T00:00:00.000Z"
+    },
+    {
+      "search": 3,
+      "title": "Funding History",
+      "url": "https://www.bitmex.com/app/fundingHistory",
+      "published": "2026-07-01T16:00:00.000Z"
+    },
+    {
+      "search": 3,
+      "title": "How do I manually calculate my Realised PNL? – BitMEX",
+      "url": "https://support.bitmex.com/hc/en-gb/articles/6205277211037-How-do-I-manually-calculate-my-Realised-PNL",
+      "published": "N/A"
+    },
+    {
+      "search": 3,
+      "title": "Funding Rates",
+      "url": "https://www.bitmex.com/app/fundingRates",
+      "published": "N/A"
+    },
+    {
+      "search": 3,
+      "title": "Exchange Guide",
+      "url": "https://www.bitmex.com/app/exchangeGuide",
+      "published": "2026-07-09T12:00:00.000Z"
+    },
+    {
+      "search": 3,
+      "title": "What are the Trading Fees and where can I see what I've paid? – BitMEX",
+      "url": "https://support.bitmex.com/hc/en-gb/articles/5903013223837-What-are-the-Trading-Fees-and-where-can-I-see-what-I-ve-paid",
+      "published": "N/A"
+    },
+    {
+      "search": 4,
+      "title": "ADA, BNB, DOGE, DOT, and FIL Quanto Perpetuals: New ...",
+      "url": "https://www.bitmex.com/blog/ada-bnb-doge-dot-and-fil-quanto-perpetuals-new-listing-and-early-settlement-of-contracts-due-to-naming-conventions",
+      "published": "2021-09-23T00:00:00.000Z"
+    },
+    {
+      "search": 4,
+      "title": "New ADAUSD, BNBUSD, DOGEUSD, and DOTUSD Quanto Perpetual Contracts Now Live - BitMEX Blog",
+      "url": "https://www.bitmex.com/blog/site-announcement/new-adausd-bnbusd-dogeusd-and-dotusd-quanto-perpetual-contracts-now-live",
+      "published": "2021-09-28T00:00:00.000Z"
+    },
+    {
+      "search": 4,
+      "title": "Sunsetting the ADAUSDT, BNBUSDT, DOTUSDT, EOSUSDT, XTZUSDT, and YFIUSDT Quanto Futures - BitMEX Blog",
+      "url": "https://www.bitmex.com/blog/sunsetting-the-adausdt-bnbusdt-dotusdt-eosusdt-xtzusdt-and-yfiusdt-quanto-futures",
+      "published": "2021-02-25T00:00:00.000Z"
+    },
+    {
+      "search": 4,
+      "title": "Introducing the new DOGEUSDT Quanto Perpetual Contract",
+      "url": "https://www.bitmex.com/blog/every-doge-has-its-day-introducing-the-new-dogeusdt-quanto-perpetual-contract",
+      "published": "2021-02-02T00:00:00.000Z"
+    },
+    {
+      "search": 4,
+      "title": "The BNBUSDT Quanto Perpetual Contract Comes to BitMEX - BitMEX Blog",
+      "url": "https://www.bitmex.com/blog/the-bnbusdt-quanto-perpetual-contract-comes-to-bitmex",
+      "published": "2021-05-14T00:00:00.000Z"
+    },
+    {
+      "search": 5,
+      "title": "FAQs | Product Docs",
+      "url": "https://docs.coinmetrics.io/resources/faqs",
+      "published": "N/A"
+    },
+    {
+      "search": 5,
+      "title": "N/A",
+      "url": "https://docs.coinmetrics.io/network-data/network-data-overview/market/price",
+      "published": "N/A"
+    },
+    {
+      "search": 5,
+      "title": "N/A",
+      "url": "https://gitbook-docs.coinmetrics.io/coin-metrics-prices/coin-metrics-prices/reference-rate-metrics",
+      "published": "N/A"
+    },
+    {
+      "search": 5,
+      "title": "N/A",
+      "url": "https://docs.coinmetrics.io/market-data/reference-rates-overview/reference_rate",
+      "published": "N/A"
+    },
+    {
+      "search": 5,
+      "title": "N/A",
+      "url": "https://gitbook-docs.coinmetrics.io/coin-metrics-prices/coin-metrics-prices",
+      "published": "N/A"
+    },
+    {
+      "search": 6,
+      "title": "XBTUSD: Contract Specification - BitMEX",
+      "url": "https://www.bitmex.com/app/contract/XBTUSD",
+      "published": "2026-06-16T12:00:10.000Z"
+    },
+    {
+      "search": 6,
+      "title": "Announcing the new ETHUSD Perpetual Contract - BitMEX Blog",
+      "url": "https://www.bitmex.com/blog/announcing-the-new-ethusd-perpetual-contract",
+      "published": "2018-08-03T00:00:00.000Z"
+    },
+    {
+      "search": 6,
+      "title": "Why Quanto? - BitMEX Blog",
+      "url": "https://www.bitmex.com/blog/why-quanto",
+      "published": "2018-08-14T09:07:35.000Z"
+    },
+    {
+      "search": 6,
+      "title": "ETHUSD Perpetual Swap Two Week Update - BitMEX Blog",
+      "url": "https://www.bitmex.com/blog/ethusd-perpetual-swap-two-week-update",
+      "published": "2018-08-20T00:00:00.000Z"
+    },
+    {
+      "search": 6,
+      "title": "Quanto for Speculators - BitMEX Blog",
+      "url": "https://www.bitmex.com/blog/quanto-for-speculators",
+      "published": "2018-08-14T00:00:00.000Z"
+    },
+    {
+      "search": 7,
+      "title": "Now ‘Live’ - Revamp of BitMEX Fee Structures for Increased Trader Rewards - BitMEX Blog",
+      "url": "https://www.bitmex.com/blog/site-announcement/now-live-revamp-of-bitmex-fee-structures-for-increased-trader-rewards",
+      "published": "2021-08-18T00:00:00.000Z"
+    },
+    {
+      "search": 7,
+      "title": "Increased Trader Rewards: An Upcoming Revamp of ...",
+      "url": "https://www.bitmex.com/blog/increased-trader-rewards-an-upcoming-revamp-of-bitmex-fee-structures",
+      "published": "2021-08-12T00:00:00.000Z"
+    },
+    {
+      "search": 7,
+      "title": "BitMEX's back, alright!",
+      "url": "https://www.bitmex.com/blog/bitmexs-back-alright",
+      "published": "2021-08-25T00:00:00.000Z"
+    },
+    {
+      "search": 7,
+      "title": "Why We Revamped Our Fee Structure",
+      "url": "https://www.bitmex.com/blog/why-we-revamped-our-fee-structure",
+      "published": "2021-09-01T00:00:00.000Z"
+    },
+    {
+      "search": 7,
+      "title": "Celebrating ETH’s Birthday with Fee Reductions on Our ETHUSD Products - BitMEX Blog",
+      "url": "https://www.bitmex.com/blog/celebrating-eths-birthday-with-fee-reductions-on-our-ethusd-products",
+      "published": "2021-07-29T00:00:00.000Z"
+    }
+  ]
+}

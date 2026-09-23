@@ -1,0 +1,88 @@
+{
+  "execution_rows": 1444583,
+  "trade_fills": 1439207,
+  "funding_rows": 5368,
+  "settlement_rows": 8,
+  "symbols": 46,
+  "executed_orders": 23416,
+  "first_execution": "2018-03-05 07:28:18.063937",
+  "last_execution": "2021-12-31 20:00:00",
+  "all_settlement_currencies": [
+    "XBt"
+  ],
+  "wallet_raw_rows": 4388,
+  "wallet_blank_rows": 2135,
+  "wallet_nonblank_rows": 2253,
+  "wallet_completed_rows": 2246,
+  "wallet_canceled_rows": 7,
+  "wallet_date_inversions": 5,
+  "wallet_duplicate_ids_nonblank": 0,
+  "deposit_btc": 14.48925714,
+  "withdrawal_btc": 2814.54321713,
+  "wallet_realised_btc": 3537.32369404,
+  "terminal_ledger_btc": 737.26973405,
+  "terminal_reported_btc": 737.26973405,
+  "terminal_residual_sat": 0,
+  "daily_snapshot_nonzero_count": 154,
+  "daily_snapshot_max_abs_residual_sat": 100120000.0,
+  "unidentified_order_fills": 28,
+  "xbtusd_unidentified_order_fills": 19,
+  "xbtusd_fills": 941007,
+  "xbtusd_orders": 18397,
+  "xbtusd_order_fill_quantiles": {
+    "0.0": 1.0,
+    "0.25": 4.0,
+    "0.5": 19.0,
+    "0.75": 60.0,
+    "0.9": 137.0,
+    "0.95": 201.20000000000073,
+    "0.99": 425.0400000000009,
+    "1.0": 2638.0
+  },
+  "xbtusd_max_abs_position_contracts_initial_zero": 85169400,
+  "xbtusd_opposite_sides_same_timestamp": 2,
+  "xbtusd_funding_position_mismatch_count": 0,
+  "xbtusd_funding_checks": 3961,
+  "xbtusd_funding_time_hours": [
+    4,
+    12,
+    20
+  ],
+  "xbtusd_position_reconstruction": {
+    "terminal_contracts": -29080100,
+    "terminal_basis_sat_per_contract": 1957.452907796053,
+    "gross_realised_btc": 2069.6490655101125,
+    "open_episode": {
+      "start": "2021-12-24 03:28:15.683307",
+      "direction": "short",
+      "gross_pnl_btc": 0.0,
+      "fee_btc": -0.03795831800000009,
+      "entry_qty": 29080100,
+      "exit_qty": 0,
+      "peak_contracts": 29080100
+    }
+  },
+  "xbtusd_closed_episodes": 2589,
+  "xbtusd_closed_episode_win_fraction_ex_funding": 0.7578215527230591,
+  "xbtusd_episode_duration_seconds_quantiles": {
+    "0.0": 2.973955,
+    "0.25": 266.122881,
+    "0.5": 1551.8890940000001,
+    "0.75": 17403.102799,
+    "0.9": 86243.06784860003,
+    "0.95": 212000.40058739993,
+    "0.99": 690855.0637775997,
+    "1.0": 4661966.040362
+  },
+  "exec_comm_btc_by_type": {
+    "Funding": -149.57544093,
+    "Settlement": 0.07551032,
+    "Trade": 78.00012971
+  },
+  "raw_trade_cost_sum_xbtusd_btc": -1500.41980247,
+  "xbtusd_wallet_realised_btc": 2007.08464645,
+  "xbtusd_model_net_realised_btc": 2007.1120987901124,
+  "xbtusd_model_minus_wallet_btc": 0.027452340112404272,
+  "xbtusd_same_timestamp_reverse_order_episode_count": 2589,
+  "xbtusd_same_timestamp_reverse_order_gross_pnl_delta_btc": 9.094947017729282e-13
+}

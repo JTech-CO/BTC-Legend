@@ -1,0 +1,16 @@
+year,ordtype,lastliquidityind,fills,contracts
+2018,Limit,AddedLiquidity,63099,966506318
+2018,Limit,RemovedLiquidity,64261,495815422
+2018,Market,RemovedLiquidity,3558,24129045
+2018,Stop,RemovedLiquidity,1834,10563160
+2019,Limit,AddedLiquidity,92910,2169779958
+2019,Limit,RemovedLiquidity,114045,1022173187
+2019,Stop,RemovedLiquidity,952,3200000
+2019,StopLimit,RemovedLiquidity,1,576
+2020,Limit,AddedLiquidity,136516,4659193561
+2020,Limit,RemovedLiquidity,164344,1942999767
+2020,Stop,RemovedLiquidity,1920,18000001
+2020,StopLimit,AddedLiquidity,97,6000000
+2020,StopLimit,RemovedLiquidity,1,126
+2021,Limit,AddedLiquidity,211768,9446712749
+2021,Limit,RemovedLiquidity,85701,2809382388

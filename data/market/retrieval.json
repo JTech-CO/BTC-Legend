@@ -1,0 +1,58 @@
+[
+  {
+    "asset": "btc",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/btc.csv",
+    "retrieved_at_utc": "2026-09-23T00:42:04.300537+00:00",
+    "status": "ok",
+    "raw_response_sha256": "06495ff8e643432e6948b7b4686ce44fc106217287dabdc1b38351d9ddec46c3",
+    "file_sha256": "7c2f951b321f930d83b98b9e7a63948728067da4168ed952b8cf99b67ef1b834",
+    "rows": 6351,
+    "last_observation": "2026-05-24"
+  },
+  {
+    "asset": "usdt",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/usdt.csv",
+    "retrieved_at_utc": "2026-09-23T00:42:04.605846+00:00",
+    "status": "ok",
+    "raw_response_sha256": "bc6cec81ee5958009964d9fbb0f81f75f590869a7aabe2add5abcd10ced32b39",
+    "file_sha256": "bdae3358c911cc67552ee4b5c4bc471d7b838c3b9841b8ab9418512aba5ad0da",
+    "rows": 4531,
+    "last_observation": "2026-05-24"
+  },
+  {
+    "asset": "bitstamp_btcusd",
+    "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=86400&limit=120&start=1779753600&end=1790121599&exclude_current_candle=true",
+    "retrieved_at_utc": "2026-09-23T00:42:04.981852+00:00",
+    "status": "ok",
+    "rows": 120,
+    "last_observation": "2026-09-22",
+    "raw_response_sha256": "0a7774ad31344a8580adc00c0b554b24e4a0255059541d08920d21d34b2ab002"
+  },
+  {
+    "asset": "bitstamp_usdtusd",
+    "url": "https://www.bitstamp.net/api/v2/ohlc/usdtusd/?step=86400&limit=120&start=1779753600&end=1790121599&exclude_current_candle=true",
+    "retrieved_at_utc": "2026-09-23T00:42:05.968968+00:00",
+    "status": "ok",
+    "rows": 120,
+    "last_observation": "2026-09-22",
+    "raw_response_sha256": "ad4718ef495154ae373c69a5ac98a6c2fd1872c88d9a547bb65d78e10ac538fc"
+  },
+  {
+    "asset": "binance_btcusdt",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=1779753600000&endTime=1790121599999&limit=1000",
+    "retrieved_at_utc": "2026-09-23T00:42:07.223711+00:00",
+    "status": "ok",
+    "rows": 120,
+    "last_observation": "2026-09-22",
+    "raw_response_sha256": "6e9afad2e1cf58902560bac011ec92ed2e315e4df3d50ad9ce0e8ed743b75bff"
+  },
+  {
+    "asset": "binance_usdtusdc",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=USDCUSDT&interval=1d&startTime=1779753600000&endTime=1790121599999&limit=1000",
+    "retrieved_at_utc": "2026-09-23T00:42:07.483465+00:00",
+    "status": "ok",
+    "rows": 120,
+    "last_observation": "2026-09-22",
+    "raw_response_sha256": "07dc7728e29d1fcf9a5dccd81c15696fed1faf656ccfd43ff1145971a35d0688"
+  }
+]

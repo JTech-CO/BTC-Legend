@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+data/aoa-*.csv
+data/*.txt
+# Large intermediate execution table; regenerate locally.
+results/orders.csv
