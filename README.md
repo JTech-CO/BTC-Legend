@@ -16,6 +16,7 @@ The project studies execution, inventory, realised performance, losses, collater
 | Follow-up: full portfolio inventory and reference risk | [Portfolio risk v0.4](reports/portfolio-risk.en.md) | [전체 포트폴리오 위험 v0.4](reports/portfolio-risk.ko.md) |
 | Historical marks, intraday exposure and flow-adjusted performance | [Risk and returns v0.5](reports/marks-intraday-returns.en.md) | [마크가격·장중 노출·수익률 v0.5](reports/marks-intraday-returns.ko.md) |
 | Priority 4: changes in trading behaviour | [Behaviour v0.5](reports/behavior-changes.en.md) | [매매 행동 변화 v0.5](reports/behavior-changes.ko.md) |
+| Priorities 5-8: adjusted behaviour, attribution, robustness and post-loss response | [Research v0.6](reports/behavior-attribution-robustness.en.md) | [행동·성과·민감도·손실 후 반응 v0.6](reports/behavior-attribution-robustness.ko.md) |
 | Definitions, accounting, data quality, reproducibility | [Methodology](research/methodology.en.md) | [분석 방법론](research/methodology.ko.md) |
 | External source register | [Sources](research/sources.md) | Shared bilingual register |
 | Machine-readable findings | [Account summary](results/summary.json), [market summary](results/market_summary.json) | Same numerical outputs |
@@ -47,6 +48,9 @@ python scripts/mark_sample_analysis.py
 python scripts/intraday_behavior.py
 python scripts/flow_adjusted_returns.py
 python scripts/extended_figures.py
+python scripts/research_priorities.py
+python scripts/research_sensitivity.py
+python scripts/robustness_figures.py
 python scripts/market_analysis.py
 python scripts/figures.py
 python -m unittest discover -s tests -v
@@ -54,6 +58,7 @@ python scripts/verify.py
 python scripts/verify_event_study.py
 python scripts/verify_portfolio_risk.py
 python scripts/verify_extended_research.py
+python scripts/verify_research_robustness.py
 ```
 
 These commands use saved market inputs and do not require network access. `python scripts/fetch_market.py` optionally downloads public market data for the fixed research cutoff; it never uses authenticated or trading endpoints. Do not refresh snapshots before reproducing the published version. Upstream revisions can change later downloads. Source hashes are recorded in `results/manifest.json` and `data/market/retrieval.json`.
@@ -73,3 +78,5 @@ The [event study](reports/event-study.en.md) attributes the best account posting
 The [portfolio study](reports/portfolio-risk.en.md) reconstructs all 46 contracts and eight settlements. Every contract's aggregate PNL matches the ledger, and all 5,368 funding quantities match inventory. Daily spot-reference valuation and eight static stress scenarios include BTC collateral and USD/USDT conversion. They are conditional scenarios, not exchange-mark NAV or actual leverage. Historical specifications override five currently reused USDT symbols. Inputs are saved separately in `data/portfolio_market/`; offline results are in [the portfolio summary](results/portfolio_risk/summary.json).
 
 The [v0.5 extension](reports/marks-intraday-returns.en.md) acquires 54 historical mark/index files for 33 monthly sample days, reconstructs intraday inventory, and studies cash-flow timing sensitivity. Its return scenarios retain spot-reference valuation and do not establish a full-period actual NAV return. The [behaviour study](reports/behavior-changes.en.md) finds fewer, larger XBTUSD executed orders, longer completed holding episodes and greater late-period altcoin contribution. Counts use parent orders rather than treating fragmented fills as independent decisions. Results and validation are under `results/extended_research/`.
+
+The [v0.6 study](reports/behavior-attribution-robustness.en.md) completes priorities 5-8. Capital and market adjustment weakens a simple independent strategy-change interpretation; 2018 and 2021 capital ranges do not overlap. An additive accounting bridge separates contract gains, fees, funding, unrealised PNL and BTC/USD revaluation. Nine mark sampling/freshness settings and alternative loss definitions expose sensitivity: post-loss risk reduction is not a universal pattern. Reproducible results are under `results/robustness_research/`, with [32 passing validation controls](results/robustness_research/validation.json) and 38 passing unit tests across the project. Original account files and prior market snapshots remain unchanged.

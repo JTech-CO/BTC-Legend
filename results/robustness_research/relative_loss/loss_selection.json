@@ -1,0 +1,28 @@
+{
+  "negative_day_count": 436,
+  "loss_threshold": -0.16430019263707257,
+  "selection_unit": "fraction_of_t_minus_2_reference_equity_btc",
+  "candidate_count": 22,
+  "selected_events": [
+    "2018-05-24",
+    "2018-09-22",
+    "2018-12-18",
+    "2019-04-02",
+    "2019-10-26",
+    "2020-04-03",
+    "2020-10-21",
+    "2020-12-28",
+    "2021-05-20"
+  ],
+  "spacing_days": 62,
+  "pre_window_last_day_offset": -2,
+  "post_window_first_day_offset": 1,
+  "matching_features": [
+    "log_capital",
+    "log_vol",
+    "lag_return_30d"
+  ],
+  "matching_information_last_day_offset": -2,
+  "control_tail_candidate_exclusion_days": 32,
+  "not_causal": true
+}

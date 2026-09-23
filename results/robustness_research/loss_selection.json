@@ -1,0 +1,26 @@
+{
+  "negative_day_count": 436,
+  "loss_threshold": -56.3106562575,
+  "selection_unit": "BTC",
+  "candidate_count": 22,
+  "selected_events": [
+    "2019-04-02",
+    "2020-04-03",
+    "2020-10-21",
+    "2020-12-28",
+    "2021-03-13",
+    "2021-05-20",
+    "2021-10-13"
+  ],
+  "spacing_days": 62,
+  "pre_window_last_day_offset": -2,
+  "post_window_first_day_offset": 1,
+  "matching_features": [
+    "log_capital",
+    "log_vol",
+    "lag_return_30d"
+  ],
+  "matching_information_last_day_offset": -2,
+  "control_tail_candidate_exclusion_days": 32,
+  "not_causal": true
+}

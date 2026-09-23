@@ -1,0 +1,6 @@
+method,wallet_residual_btc,terminal_quantity,max_daily_residual_sat
+fill_float,0.007871859933675392,-29080100,4196755.774433851
+batch_float,-4.915511789731682e-09,-29080100,66.93738651275635
+batch_half_even,0.0,-29080100,2.0
+batch_half_up,0.0,-29080100,2.0
+batch_floor,0.0,-29080100,492.0

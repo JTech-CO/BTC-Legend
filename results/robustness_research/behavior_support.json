@@ -1,0 +1,12 @@
+{
+  "early_late_common_min": 12267063.444412308,
+  "early_late_common_max": 534314.790140725,
+  "common_support_exists": false,
+  "seed": 20260923,
+  "bootstrap_draws": 499,
+  "blocks_days": [
+    7,
+    14,
+    28
+  ]
+}

@@ -14,6 +14,7 @@
 | 전체 포트폴리오 위험 복원 | [한국어 v0.4](reports/portfolio-risk.ko.md) · [English v0.4](reports/portfolio-risk.en.md) |
 | 과거 마크가격·장중 노출·입출금 조정 성과 | [한국어 v0.5](reports/marks-intraday-returns.ko.md) · [English v0.5](reports/marks-intraday-returns.en.md) |
 | 우선순위 4: 매매 행동의 변화 | [한국어 v0.5](reports/behavior-changes.ko.md) · [English v0.5](reports/behavior-changes.en.md) |
+| 우선순위 5-8: 행동 설명·성과 기여·민감도·손실 후 반응 | [한국어 v0.6](reports/behavior-attribution-robustness.ko.md) · [English v0.6](reports/behavior-attribution-robustness.en.md) |
 | 단위·회계·데이터 품질·재현 방법 | [한국어 방법론](research/methodology.ko.md) · [English](research/methodology.en.md) |
 | 외부 근거 | [출처 목록](research/sources.md) |
 | 수치 원본 | [계정 집계](results/summary.json) · [시장 집계](results/market_summary.json) |
@@ -35,3 +36,5 @@ v0.4에서는 **46개 계약과 만기 정산 8건**을 복원했습니다. 모�
 [v0.5 확장 연구](reports/marks-intraday-returns.ko.md)는 월초 33일의 과거 마크·지수 파일 54개를 확보하고 장중 수량과 입출금 시각 민감도를 분석했습니다. 수익률 시나리오는 현물 기준 평가를 유지하며 전체 기간의 실제 NAV 수익률을 확정하지 않습니다. [매매 행동 연구](reports/behavior-changes.ko.md)에서는 XBTUSD 주문 수 감소, 절대 주문 규모·완료 보유 시간 증가와 후기 알트 기여 확대를 확인했습니다. 분할 체결을 독립 판단으로 세지 않고 부모 주문을 비교합니다. 새 결과와 검증은 `results/extended_research/`에 있습니다.
 
 제공자 원본이 없는 체크아웃에서는 `research_events.py` 이후 `fetch_historical_marks.py`로 공개 표본을 받은 다음 분석합니다. 로컬에 표본이 있으면 오프라인 재현이 가능합니다. 제공자 원본 압축파일과 대형 사건 캐시는 Git 제외 대상으로 두고 수집 기록·파생 연구표를 남겼습니다.
+
+[v0.6 연구](reports/behavior-attribution-robustness.ko.md)는 우선순위 5-8을 다룹니다. 자본·시장을 조정하면 독립된 전략 변화라는 단순 해석이 약해지며, 2018년과 2021년의 자본 범위는 겹치지 않습니다. 가산 회계 분해로 계약 손익·수수료·펀딩·미실현손익·BTC/USD 환산을 구분했습니다. 마크가격의 간격·최신성 9개 조합과 손실 정의 변경으로 결론의 민감도를 확인했으며, 손실 후 위험 축소는 보편적인 패턴이 아니었습니다. 재현 결과는 `results/robustness_research/`에 있고, [검증 32개](results/robustness_research/validation.json)와 프로젝트 전체 단위 테스트 38개가 통과했습니다. 계좌 원본과 이전 시장 스냅샷은 그대로 보존했습니다.

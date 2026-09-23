@@ -1,0 +1,19 @@
+{
+  "results/manifest.json": "72bdc31cb90c9410416fff031004163d9c00a07a92705ba16fb14031847b0d07",
+  "results/portfolio_risk/daily_reference_risk.csv": "d596cb75ce5b70422de7865ae0fab219ee5b8c8546e4784aaf010ff35882fe22",
+  "results/portfolio_risk/contract_registry.csv": "3b84af6c71a280bf222bbe6ea538cf9993bc1e78b94fcb3627835b8e878bea7e",
+  "results/portfolio_risk/accounting_by_contract.csv": "0161b584ce7e18eb1f562034a6e650195874d310c6324effcc8f76099c23ad49",
+  "results/event_study/account_daily.csv": "5c6f190a896fde9470cd2f8bbba3fbd4a9469abc62a4c66806dca2cb0c994011",
+  "results/accounting_audit/summary.json": "3b935feae96195ab45ad2d777d476724660c1ff93e78b58b002581e640b8ee13",
+  "results/historical_market_daily.csv": "d6caefeda1eb7440abcc4585a1d3c76dadeaa2b9d8751ae08bf0f4ceed3bf5ed",
+  "data/market/btc_coinmetrics_daily.csv": "7c2f951b321f930d83b98b9e7a63948728067da4168ed952b8cf99b67ef1b834",
+  "data/historical_marks/retrieval.json": "d8d44f75631e03acbf88d5e6fe1f9497c72bbaac029b3e566ea7b5610fd93fb1",
+  "results/extended_research/contract_event_states.csv.gz": "c9de139ac1f6dea58c10a925fd40ecb49823cba2725dd3c224a02799b76ea431",
+  "results/extended_research/executed_orders.csv": "6b8020930810b2d7a6496fe5389567cc52e6c132f847364ff097994092478ce4",
+  "results/extended_research/funding_events.csv": "c0f3698808eb099cd7e781e3baf1599e880a6b3ee6e6cfccaa3efdddc130d47e",
+  "results/extended_research/holding_episodes.csv": "13771715cfe024a602bd92c2cd4b295fc560ae2886b5bd55da129a4255f264cc",
+  "results/extended_research/intraday_daily_extremes.csv": "2d25602a659d71e649a0034b8122157409f55e025daea655b998470d16b2cbc4",
+  "results/extended_research/conditional_period_returns.csv": "d536979746e3c7c86216e68e8479118e0ecef6f10a9b00cfced0babc27dc17c2",
+  "results/extended_research/historical_mark_sample_equity.csv.gz": "861618d47cd615e7456881c1d4221832e9408d030fcc4f0596b9ed178cfc33ec",
+  "results/extended_research/input_manifest.json": "fad3bedfe77d04b57f0a603bf170a59628ecb908cbdd7dd30d9afe6747de2910"
+}

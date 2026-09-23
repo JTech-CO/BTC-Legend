@@ -57,3 +57,10 @@ The v0.5 [input manifest](../results/extended_research/input_manifest.json) reco
 Undated live-price pages and stale search snippets were rejected as current-price evidence. An initial Coinbase public candle request returned HTTP 403; the study uses successfully retrieved Bitstamp/Binance data instead. No missing observations were filled with news prices.
 
 공개 데이터 접근 가능 여부는 재배포 라이선스 확인과 다릅니다. 원본 계정 파일과 서한의 공개 권한은 이 연구에서 확정하지 않았으며, 실제 GitHub 공개 전에 소유자가 결정할 사항입니다.
+
+Priorities 5-8, v0.6, checked two primary software-methodology references on 2026-09-23, separately from the original Exa count:
+
+- S26: [statsmodels HAC covariance documentation](https://www.statsmodels.org/stable/generated/statsmodels.stats.sandwich_covariance.cov_hac.html). Reference for heteroskedasticity/autocorrelation covariance and Bartlett lag weights. The research has an explicitly documented NumPy implementation with daily score aggregation and an independent pairwise-kernel unit test. It does not require statsmodels or claim that its custom block-wild intervals come from this API. HAC 참고이며 별도 블록 와일드 구간을 해당 API의 결과로 표시하지 않습니다.
+- S27: [statsmodels duration analysis](https://www.statsmodels.org/stable/duration.html). General methodological context for right-censored durations. The release instead uses a fully observed 168-hour capped endpoint, includes the final open episode and fits no hazard/survival model. 우측 검열의 일반적 근거이며 미관측 청산 시각을 추정하지 않습니다.
+
+The [v0.6 report](../reports/behavior-attribution-robustness.en.md) / [한국어](../reports/behavior-attribution-robustness.ko.md) derives its numerical findings from retained account and market files, not from these documentation pages. It reuses D1-D2 and the saved S9-S10/D4/D5 observations, with [input hashes](../results/robustness_research/input_manifest.json) and [validation](../results/robustness_research/validation.json). No account files, captured prices or current-market snapshots were refreshed. USD component attribution is a stated algebraic accounting convention, not an externally certified return or causal factor decomposition.
