@@ -9,6 +9,7 @@
 | 자료 | 링크 |
 | --- | --- |
 | 핵심 발견과 당시·현재 시장 비교 | [한국어 연구 보고서](reports/research.ko.md) · [English](reports/research.en.md) |
+| 후속 회계 차이 추적 | [한국어 v0.2](reports/accounting-audit.ko.md) · [English v0.2](reports/accounting-audit.en.md) |
 | 단위·회계·데이터 품질·재현 방법 | [한국어 방법론](research/methodology.ko.md) · [English](research/methodology.en.md) |
 | 외부 근거 | [출처 목록](research/sources.md) |
 | 수치 원본 | [계정 집계](results/summary.json) · [시장 집계](results/market_summary.json) |
@@ -20,3 +21,5 @@
 ![시장과 지갑의 변화](reports/figures/market_wallet.png)
 
 재현 명령은 [영문 README](README.md#reproduce-locally)에 있습니다. 저장된 시장 자료로 오프라인 재실행할 수 있습니다. 원본은 보존했으며, 현재 비교는 **2026.09.22 UTC 일봉 종료 시점**을 기준으로 합니다. 데이터 공개 권한이나 라이선스는 임의로 확정하지 않았습니다.
+
+후속 회계 연구에서는 기존 XBTUSD 총차이 **0.02745234 BTC**를 정산 범위 밖 펀딩 **0.01958048 BTC**와 원가 배분 차이 **0.00787186 BTC**로 설명했습니다. 개선 모델의 총차이는 0이며, 일별 12일에는 1~2사토시 차이가 남습니다. 지갑 차이 154일 중 152일은 표시 정밀도로 설명되고, 2일은 한 출금의 날짜·처리 순서 확인이 필요합니다. 기존 조건부 구간 통계는 비교용으로 유지하며 최신 회계 결과는 별도 [집계](results/accounting_audit/summary.json)에 있습니다.

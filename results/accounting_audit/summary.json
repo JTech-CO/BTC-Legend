@@ -1,0 +1,163 @@
+{
+  "version": "0.2-accounting-audit",
+  "source_manifest": [
+    {
+      "file": "aoa-execution-2018-03-01-2018-12-31.csv",
+      "bytes": 67993490,
+      "rows": 164096,
+      "sha256": "8f2aa1af3caaeaeffff0375ce4d10b21e88ab22c624976d9031ddd0e715653b1"
+    },
+    {
+      "file": "aoa-execution-2019-01-01-2020-12-31.csv",
+      "bytes": 219076835,
+      "rows": 529632,
+      "sha256": "ebbd90935d8e609e6371fec69babbfea13c0458a94748b05f3f795cecd814b5a"
+    },
+    {
+      "file": "aoa-execution-2021-01-01-2021-06-30.csv",
+      "bytes": 191784153,
+      "rows": 457603,
+      "sha256": "a51f070c9e00aed72720b9029567d4adf32656d06594b87dff3b56360564ca37"
+    },
+    {
+      "file": "aoa-execution-2021-07-01-2021-12-31.csv",
+      "bytes": 122612445,
+      "rows": 293252,
+      "sha256": "3bd436edb68c60bd17eb3b0c307c68baf56ad79c1da9a21a0433031f4ea7a071"
+    },
+    {
+      "file": "aoa-wallet-2018-03-01-2021-12-31.csv",
+      "bytes": 318791,
+      "rows": 4388,
+      "sha256": "db0a8e6180faa093a7843ec09b1f673417252b2a7b6cac50ac96db426f2f3452"
+    }
+  ],
+  "wallet": {
+    "observed_days": 1380,
+    "exact_days": 1226,
+    "nonzero_days": 154,
+    "display_rounding_days": 152,
+    "date_conflict_days": [
+      "2018-04-27",
+      "2018-04-28"
+    ],
+    "scenario_matches_at_display_precision": 1380,
+    "scenario_unexplained_days": 0,
+    "scenario_transaction_id": "245c7553-adb9-7071-5e6d-04b65f14a127",
+    "scenario_original_date": "2018-04-27",
+    "scenario_effective_date": "2018-04-28",
+    "scenario_is_source_correction": false
+  },
+  "xbtusd": {
+    "wallet_total_sat": 200708464645,
+    "trade_rows": 941007,
+    "batches": 506211,
+    "funding_rows": 3961,
+    "after_cutoff_net_credit_sat": 1958048,
+    "variants": {
+      "fill_float": {
+        "events": 941007,
+        "terminal": {
+          "terminal_position": -29080100,
+          "terminal_cost_sat": 56922926304.0,
+          "gross_sat": 206964906550.97736
+        },
+        "wallet_period_net_sat": 200709251830.99338,
+        "wallet_period_residual_sat": 787185.9933675393,
+        "calendar_days": 1398,
+        "actual_posting_days": 1377,
+        "exact_posting_days": 452,
+        "nonzero_model_on_absent_posting_days": 0,
+        "exact_days": 473,
+        "within_one_sat_days": 1040,
+        "max_abs_daily_residual_sat": 4196755.774433851,
+        "sum_abs_daily_residual_sat": 15556205.206025619
+      },
+      "batch_float": {
+        "events": 506211,
+        "terminal": {
+          "terminal_position": -29080100,
+          "terminal_cost_sat": 56922139117.512375,
+          "gross_sat": 206964119364.5012
+        },
+        "wallet_period_net_sat": 200708464644.50848,
+        "wallet_period_residual_sat": -0.49155117897316813,
+        "calendar_days": 1398,
+        "actual_posting_days": 1377,
+        "exact_posting_days": 459,
+        "nonzero_model_on_absent_posting_days": 0,
+        "exact_days": 480,
+        "within_one_sat_days": 1102,
+        "max_abs_daily_residual_sat": 66.93738651275635,
+        "sum_abs_daily_residual_sat": 1723.1867470829748
+      },
+      "batch_half_even": {
+        "events": 506211,
+        "terminal": {
+          "terminal_position": -29080100,
+          "terminal_cost_sat": 56922139118,
+          "gross_sat": 206964119365
+        },
+        "wallet_period_net_sat": 200708464645,
+        "wallet_period_residual_sat": 0,
+        "calendar_days": 1398,
+        "actual_posting_days": 1377,
+        "exact_posting_days": 1365,
+        "nonzero_model_on_absent_posting_days": 0,
+        "exact_days": 1386,
+        "within_one_sat_days": 1396,
+        "max_abs_daily_residual_sat": 2,
+        "sum_abs_daily_residual_sat": 14
+      },
+      "batch_half_up": {
+        "events": 506211,
+        "terminal": {
+          "terminal_position": -29080100,
+          "terminal_cost_sat": 56922139118,
+          "gross_sat": 206964119365
+        },
+        "wallet_period_net_sat": 200708464645,
+        "wallet_period_residual_sat": 0,
+        "calendar_days": 1398,
+        "actual_posting_days": 1377,
+        "exact_posting_days": 1365,
+        "nonzero_model_on_absent_posting_days": 0,
+        "exact_days": 1386,
+        "within_one_sat_days": 1396,
+        "max_abs_daily_residual_sat": 2,
+        "sum_abs_daily_residual_sat": 14
+      },
+      "batch_floor": {
+        "events": 506211,
+        "terminal": {
+          "terminal_position": -29080100,
+          "terminal_cost_sat": 56922139118,
+          "gross_sat": 206964119365
+        },
+        "wallet_period_net_sat": 200708464645,
+        "wallet_period_residual_sat": 0,
+        "calendar_days": 1398,
+        "actual_posting_days": 1377,
+        "exact_posting_days": 710,
+        "nonzero_model_on_absent_posting_days": 0,
+        "exact_days": 731,
+        "within_one_sat_days": 938,
+        "max_abs_daily_residual_sat": 492,
+        "sum_abs_daily_residual_sat": 22788
+      }
+    },
+    "integer_cost_conservation": true,
+    "interpretation": "Batch allocation and rounding are empirically tested reconstructions, not confirmation of proprietary exchange implementation."
+  },
+  "residual_bridge": {
+    "baseline_reported_gap_btc": 0.027452340112404272,
+    "exact_satoshi_baseline_gap_sat": 2745234,
+    "out_of_wallet_window_funding_sat": 1958048,
+    "final_inventory_cost_allocation_difference_sat": 787186,
+    "refined_in_window_residual_sat": 0,
+    "refined_all_execution_net_sat": 200710422693,
+    "wallet_window_end_exclusive_utc": "2021-12-31T12:00:00Z",
+    "final_batch_time": "2021-12-24T03:28:15.683307",
+    "note": "Baseline floating-point gap contains sub-satoshi numerical noise; integer bridge is exact."
+  }
+}

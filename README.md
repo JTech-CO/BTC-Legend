@@ -11,6 +11,7 @@ The project studies execution, inventory, realised performance, losses, collater
 | Document | English | Korean |
 | --- | --- | --- |
 | Findings, historical/current comparison, transferability | [Research report](reports/research.en.md) | [연구 보고서](reports/research.ko.md) |
+| Follow-up: accounting discrepancy attribution | [Accounting audit v0.2](reports/accounting-audit.en.md) | [회계 차이 추적 v0.2](reports/accounting-audit.ko.md) |
 | Definitions, accounting, data quality, reproducibility | [Methodology](research/methodology.en.md) | [분석 방법론](research/methodology.ko.md) |
 | External source register | [Sources](research/sources.md) | Shared bilingual register |
 | Machine-readable findings | [Account summary](results/summary.json), [market summary](results/market_summary.json) | Same numerical outputs |
@@ -31,6 +32,7 @@ Python 3.11+ and the packages in `requirements.txt` are sufficient. The supplied
 
 ```text
 python scripts/analyze.py
+python scripts/accounting_audit.py
 python scripts/market_analysis.py
 python scripts/figures.py
 python -m unittest discover -s tests -v
@@ -43,4 +45,6 @@ These commands use saved market inputs and do not require network access. `pytho
 
 ## Limits that affect interpretation
 
-Wallet timestamps are truncated, some balances have limited decimal precision, daily snapshots do not all reconcile, the position-cost model differs from XBTUSD ledger PNL by **0.02745234 BTC**, and ending inventory remains open. NAV returns, exact leverage, Sharpe ratios, liquidation prices, predictive signals and modern profitability are therefore not established. See the methodology for each limitation and the tests required to resolve it.
+The [accounting follow-up](reports/accounting-audit.en.md) explains the baseline **0.02745234 BTC** gap as **0.01958048 BTC of out-of-window funding** plus **0.00787186 BTC of inventory cost allocation**. The refined XBTUSD aggregate matches the wallet exactly. Twelve posting dates retain differences of 1–2 satoshis. Of 154 raw wallet snapshot differences, 152 match the source's displayed precision; two dates involve one withdrawal with ambiguous processing chronology. Wallet timestamps remain truncated and ending inventory remains open. NAV returns, exact leverage, Sharpe ratios, liquidation prices, predictive signals and modern profitability are not established.
+
+`results/summary.json` and the conditional episode files retain the v0.1 fill-based baseline. Refined accounting evidence is in [results/accounting_audit/summary.json](results/accounting_audit/summary.json); it does not silently replace the original episode statistics.

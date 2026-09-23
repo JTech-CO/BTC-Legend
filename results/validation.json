@@ -34,14 +34,33 @@
     "market_close_parse_binance_btcusdt": true,
     "download_status_binance_usdtusdc": true,
     "market_response_hash_binance_usdtusdc": true,
-    "market_close_parse_binance_usdtusdc": true
+    "market_close_parse_binance_usdtusdc": true,
+    "audit_source_manifest_matches": true,
+    "audit_wallet_residual_partition": true,
+    "audit_does_not_erase_date_ambiguity": true,
+    "audit_xbt_total_matches_source": true,
+    "audit_xbt_daily_residual_bounds": true,
+    "audit_xbt_actual_days": true,
+    "audit_xbt_exact_posting_days": true,
+    "audit_gap_bridge": true,
+    "audit_cost_conservation": true
   },
   "all_integrity_checks_pass": true,
   "unresolved_measurement_limits": {
-    "daily_wallet_snapshot_residual_days": 154,
-    "xbtusd_model_minus_wallet_btc": 0.027452340112404272,
+    "baseline_raw_wallet_snapshot_residual_days": 154,
+    "baseline_fill_model_full_export_gap_btc": 0.027452340112404272,
     "open_end_position_contracts": -29080100,
     "wallet_intraday_timestamps": "truncated",
-    "identity_and_external_account_coverage": "not independently verified"
+    "identity_and_external_account_coverage": "not independently verified",
+    "wallet_display_rounding_days_explained": 152,
+    "wallet_dates_requiring_original_processing_time": [
+      "2018-04-27",
+      "2018-04-28"
+    ],
+    "refined_xbt_total_residual_sat": 0,
+    "refined_xbt_nonzero_posting_days": 12,
+    "refined_xbt_max_daily_residual_sat": 2,
+    "refined_xbt_sum_abs_daily_residual_sat": 14,
+    "exchange_batch_and_rounding_implementation": "empirically consistent reconstruction, not independently confirmed"
   }
 }

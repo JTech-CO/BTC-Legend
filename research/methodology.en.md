@@ -2,6 +2,8 @@
 
 Version 0.1, research cutoff 2026-09-23. [한국어](methodology.ko.md). Numerical evidence comes from [summary.json](../results/summary.json), the associated CSV tables, and the [source register](sources.md).
 
+The [v0.2 accounting audit](../reports/accounting-audit.en.md) refines this baseline's reporting boundary and simultaneous-fill allocation. Baseline episode outputs are retained for comparison; refined accounting outputs are stored separately.
+
 ## 1. Preserve and validate the inputs
 
 The five supplied CSVs are read without modification. SHA-256, bytes and row counts identify each original. Execution IDs must be non-null and globally unique. Trade quantities/prices must be positive and directions must be Buy/Sell. All observed settlement currencies are `XBt`. The script fails if these conditions change. No losses, liquidation rows or outliers are trimmed.
@@ -40,7 +42,7 @@ For inventory, all XBTUSD Trade rows, including liquidation fills, are sorted by
 
 Two timestamps contain both sides. Reversing the within-timestamp order-ID sort produces the same episode count and gross PNL to floating-point precision. This is a narrow tie-order sensitivity check, not proof of a complete exchange sequence.
 
-A reversal allocates its commission in proportion to the quantities closing and opening. Each fully closed episode reports gross PNL minus allocated trade fees, **excluding funding**. Open episodes are not counted as wins or losses. Average-cost episode statistics are conditional: reconstruction yields 2,007.11209879 BTC total net realised PNL versus 2,007.08464645 BTC in the XBTUSD wallet ledger, a **+0.02745234 BTC unresolved difference**. Rounding/basis conventions are candidates, not established explanations. No adjustment is inserted to force a match.
+A reversal allocates its commission in proportion to the quantities closing and opening. Each fully closed episode reports gross PNL minus allocated trade fees, **excluding funding**. Open episodes are not counted as wins or losses. The baseline produces 2,007.11209879 BTC versus wallet PNL of 2,007.08464645 BTC. The [follow-up audit](../reports/accounting-audit.en.md) explains the **+0.02745234 BTC** difference as out-of-window funding and simultaneous-batch cost allocation. A separate integer batch reconstruction matches total wallet PNL, with twelve daily residuals of one or two satoshis. No balancing plug is used, and the baseline episode statistics are not silently redefined.
 
 ## 4. Wallet identity and residuals
 
@@ -53,7 +55,7 @@ completed deposits + net realised PNL − completed withdrawals = final wallet
 
 This matches the final reported balance exactly, with an implied zero initial balance. The wallet contains five date-order inversions. Several instrument PNL rows share one post-batch balance; row-by-row `balance.diff() == amount` is therefore not a valid general check. We sum completed movements by stated date, then compare their cumulative ledger with the last source-row snapshot on that date.
 
-**154 observed days have a nonzero daily residual.** The largest absolute difference is 1.0012 BTC on 2018-04-28; 2018-04-27 differs by 0.54595876 BTC. Many 2021 balances use scientific notation with coarse precision. These facts do not justify silently repairing dates or balances. Exact end reconciliation does not establish exact daily reconciliation. Both reconstructed balances and reported snapshots remain in `wallet_daily.csv`.
+**154 observed days have a nonzero raw daily residual.** The largest absolute difference is 1.0012 BTC on 2018-04-28; 2018-04-27 differs by 0.54595876 BTC. The follow-up finds that 152 differences round exactly to the scientific-notation source precision. The April pair is a withdrawal date/snapshot ordering conflict, arithmetically reconciled under an explicitly labelled scenario. The actual processing date remains unknown. Both original date-based balances and reported snapshots remain in `wallet_daily.csv`.
 
 Wallet `timestamp`/`transacttime` strings omit the hour and/or date (e.g. `57:26.3`). We do not fabricate exact times. Execution timestamps have no zone suffix. Their 04/12/20 funding cadence agrees with documented BitMEX UTC times [S4](sources.md), so market work uses UTC as a provisional convention. Wallet PNL is analysed by posting date. It cannot establish same-day causal reactions to a midnight-close market series; exchange daily settlement windows also differ from UTC calendar days [S3](sources.md).
 
@@ -79,7 +81,7 @@ Current analogs use Euclidean distance after scaling 7-day return, 30-day return
 
 ## 7. Research needed to establish transferability
 
-The next stage requires historical mark/index prices, funding snapshots, order-book/trade feeds with consistent UTC times, historical contract multipliers and margin/risk limits, and data showing available equity and open positions. Obtain the original wallet timestamp export and resolve the 2018 day-level residuals and XBTUSD basis mismatch first.
+The next stage requires historical mark/index prices, funding snapshots, order-book/trade feeds with consistent UTC times, historical contract multipliers and margin/risk limits, and data showing available equity and open positions. The follow-up has explained the aggregate XBTUSD gap and the numerical structure of the 2018 discrepancy. Original wallet processing timestamps and exchange batching/rounding documentation would resolve the remaining chronology and tiny daily allocation uncertainty.
 
 Pre-register a small set of testable mechanisms: directional timing, inventory reduction after adverse moves, passive execution savings, funding exposure and position scaling. For each, specify the observable signal and falsification condition before examining its outcomes. Separate discretionary motives from measured behavior.
 

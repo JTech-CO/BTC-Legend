@@ -54,7 +54,25 @@ def main():
             table=pd.read_csv(ROOT/'data/market'/f'{name}_daily.csv')
             values=[float(r['close']) for r in obj['data']['ohlc']] if name.startswith('bitstamp') else [float(r[4]) for r in obj]
             checks['market_close_parse_'+name]=len(values)==len(table) and all(abs(a-b)<1e-7 for a,b in zip(values,table.close))
-    unresolved={'daily_wallet_snapshot_residual_days':summary['daily_snapshot_nonzero_count'],'xbtusd_model_minus_wallet_btc':summary['xbtusd_model_minus_wallet_btc'],'open_end_position_contracts':summary['xbtusd_position_reconstruction']['terminal_contracts'],'wallet_intraday_timestamps':'truncated','identity_and_external_account_coverage':'not independently verified'}
+    unresolved={'baseline_raw_wallet_snapshot_residual_days':summary['daily_snapshot_nonzero_count'],'baseline_fill_model_full_export_gap_btc':summary['xbtusd_model_minus_wallet_btc'],'open_end_position_contracts':summary['xbtusd_position_reconstruction']['terminal_contracts'],'wallet_intraday_timestamps':'truncated','identity_and_external_account_coverage':'not independently verified'}
+    audit_path=ROOT/'results/accounting_audit/summary.json'
+    if audit_path.exists():
+        audit=json.loads(audit_path.read_text())
+        evidence=ROOT/'results/accounting_audit'
+        classified=pd.read_csv(evidence/'wallet_daily_classification.csv')
+        detailed=pd.read_csv(evidence/'xbtusd_daily_batch_half_even.csv')
+        period=detailed[detailed.within_wallet_period]
+        checks['audit_source_manifest_matches']=audit['source_manifest']==json.loads((ROOT/'results/manifest.json').read_text())
+        checks['audit_wallet_residual_partition']=classified.classification.value_counts().to_dict()=={'exact':1226,'display_rounding':152,'date_snapshot_order_conflict':2}
+        checks['audit_does_not_erase_date_ambiguity']=audit['wallet']['scenario_is_source_correction'] is False
+        checks['audit_xbt_total_matches_source']=int(period.model_sat.sum())==int(symbols.loc[symbols.symbol.eq('XBTUSD'),'pnl_sat'].iloc[0])
+        checks['audit_xbt_daily_residual_bounds']=period.difference_sat.abs().max()==2 and period.difference_sat.abs().sum()==14
+        checks['audit_xbt_actual_days']=int(period.wallet_present.sum())==1377
+        checks['audit_xbt_exact_posting_days']=int((period.wallet_present & period.difference_sat.eq(0)).sum())==1365
+        bridge=audit['residual_bridge']
+        checks['audit_gap_bridge']=bridge['exact_satoshi_baseline_gap_sat']==bridge['out_of_wallet_window_funding_sat']+bridge['final_inventory_cost_allocation_difference_sat']+bridge['refined_in_window_residual_sat']
+        checks['audit_cost_conservation']=audit['xbtusd']['integer_cost_conservation']
+        unresolved.update({'wallet_display_rounding_days_explained':152,'wallet_dates_requiring_original_processing_time':['2018-04-27','2018-04-28'],'refined_xbt_total_residual_sat':0,'refined_xbt_nonzero_posting_days':12,'refined_xbt_max_daily_residual_sat':2,'refined_xbt_sum_abs_daily_residual_sat':14,'exchange_batch_and_rounding_implementation':'empirically consistent reconstruction, not independently confirmed'})
     result={'checks':{k:bool(v) for k,v in checks.items()},'all_integrity_checks_pass':all(checks.values()),'unresolved_measurement_limits':unresolved}
     (ROOT/'results/validation.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
     print(json.dumps(result,indent=2))

@@ -2,6 +2,8 @@
 
 **Research v0.1 - 23 September 2026** · [한국어](research.ko.md) · [Methods](../research/methodology.en.md) · [Sources](../research/sources.md)
 
+Accounting update: [v0.2 discrepancy audit](accounting-audit.en.md) explains the aggregate model gap and classifies all 154 snapshot differences. The episode statistics below remain the original fill-sequential baseline.
+
 ## Research conclusion
 
 The supplied account generated substantial **realised BTC profits across both rising and falling BTC markets**. Its results cannot be reduced to a BTC buy-and-hold position or one disclosed technical indicator. The records support an account that traded both directions, scaled order sizes, increasingly supplied liquidity, and earned substantial profits from non-BTC contracts. They also document liquidation-labelled executions and severe realised losses.
@@ -44,7 +46,7 @@ These movements reconcile to the final balance with **zero satoshi aggregate res
 
 Wallet balance excludes unrealised position PNL. The reconstructed ending XBTUSD inventory is **−29,080,100 USD contracts**, and therefore still open. Dividing final wallet wealth by the first deposit would confound later deposits, withdrawals, open risk and the missing capital history. A headline CAGR, leverage multiple or Sharpe ratio would imply precision the evidence does not provide.
 
-Daily reconciliation is weaker than the aggregate identity: 154 dates have nonzero differences between the reconstructed ledger and the last reported daily snapshot. The largest is 1.0012 BTC. Truncated times, repeated batch balances, date-order inversions and coarse numerical precision are documented, not silently fixed. See [methodology](../research/methodology.en.md#4-wallet-identity-and-residuals).
+Daily raw comparison has 154 nonzero differences, the largest 1.0012 BTC. The [follow-up audit](accounting-audit.en.md) attributes 152 to displayed precision and two to one withdrawal's date/snapshot ordering conflict. A chronology scenario reconciles the latter, but its actual processing date remains unverified. Source dates and amounts are not silently fixed.
 
 ## 3. Where the profits came from
 
@@ -105,7 +107,7 @@ The conditional XBTUSD reconstruction finds **2,589 completed inventory episodes
 
 [Episode statistics](../results/xbtusd_episode_statistics_conditional.csv). These are position episodes, not discrete discretionary ideas; BTC sizes vary greatly across time. On this definition the mean losing episode is larger than the mean winning episode. Thus a universal “small losses, large wins” explanation is unsupported. The observed high hit rate compensates for a payoff ratio below one. This does not make the pattern safe or transferable.
 
-The average-cost model differs from wallet XBTUSD realised PNL by **0.02745234 BTC**. Funding is excluded from episode statistics, one final episode remains open, and positions in other instruments may hedge these episodes. Treat the table as exploratory rather than an audited true trade win rate.
+The baseline average-cost model's **0.02745234 BTC** wallet comparison gap is explained in [the accounting audit](accounting-audit.en.md) by the reporting cutoff and simultaneous-fill cost allocation. The refined batch accounting has zero aggregate residual and daily differences of at most two satoshis. The episode table above retains the original fill-sequential convention, excludes funding, and omits one open final episode. Other instruments may hedge these episodes. It remains exploratory rather than an audited true trade win rate.
 
 ### Collateral changes the meaning of a short
 

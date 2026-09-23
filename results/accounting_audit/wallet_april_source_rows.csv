@@ -1,0 +1,8 @@
+date,transactid,account,currency,amount,transactstatus,address,network,text,timestamp,transacttime,transacttype,tx,walletbalance,source_row,amount_sat,balance_sat
+2018-04-26,e1e580e7-0b98-b343-93c4-02f7b2c90296,aoa,XBt,170204947,Completed,XBTUSD,,,00:00.6,00:00.0,RealisedPNL,-,424743181,79,170204947,424743181
+2018-04-27,bf522c46-6f23-4a08-6a83-f02ddb161ddc,aoa,XBt,1718121,Completed,XBTUSD,,,00:00.6,00:00.0,RealisedPNL,-,426461302,80,1718121,426461302
+2018-04-28,66e4034f-dc6f-73a5-7b5b-bdb82957d972,aoa,XBt,54595876,Completed,XBTUSD,,,00:00.6,00:00.0,RealisedPNL,-,481057178,81,54595876,481057178
+2018-04-27,245c7553-adb9-7071-5e6d-04b65f14a127,aoa,XBt,-100120000,Completed,External exchange,btc,,08:35.8,13:15.8,Withdrawal,-,380937178,82,-100120000,380937178
+2018-04-29,576884ec-157b-01c0-3851-d4d54ed34360,aoa,XBt,33452667,Completed,ADAM18,,,00:00.6,00:00.0,RealisedPNL,-,413219623,83,33452667,413219623
+2018-04-29,ae721aa4-69a4-f724-4f36-e175d8bf23fe,aoa,XBt,-1731985,Completed,XBTUSD,,,00:00.6,00:00.0,RealisedPNL,-,413219623,84,-1731985,413219623
+2018-04-29,6a12d92e-d1f1-5dd6-5ebc-9256cad3ce1a,aoa,XBt,561763,Completed,XRPM18,,,00:00.6,00:00.0,RealisedPNL,-,413219623,85,561763,413219623

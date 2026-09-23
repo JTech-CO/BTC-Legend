@@ -1,0 +1,2 @@
+time,orderid,side,quantity,fill_count,gross_sat,fee_sat,net_sat,position_before,position_after,held_cost_sat
+2021-12-24 03:28:15.683307,7623ce3f-8206-4be4-8ad0-b3a312832fb8,Sell,2855500,76,169606866,2236921,167369945,919900,-1935600,3790805128

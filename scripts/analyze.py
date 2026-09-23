@@ -12,7 +12,9 @@ OUT.mkdir(exist_ok=True)
 SAT = 100_000_000
 
 def save(df, name):
-    df.to_csv(OUT/name,index=False,float_format='%.10g')
+    # Ten significant digits can discard satoshis from nullable balance columns.
+    # Pandas' default representation round-trips finite float64 values.
+    df.to_csv(OUT/name,index=False)
 
 def describe(s):
     return {str(k):float(v) for k,v in s.quantile([0,.25,.5,.75,.9,.95,.99,1]).items()}
